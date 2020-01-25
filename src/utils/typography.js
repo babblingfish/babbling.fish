@@ -9,6 +9,7 @@ const theme = {
   title: "Beach House",
   baseFontSize: "18px",
   baseLineHeight: "27px",
+  scaleRatio: 2.05,
   headerFontFamily: ["Merriweather", "serif"],
   bodyFontFamily: ["Roboto", "sans-serif"],
   headerColor: "hsla(0,0%,0%,0.90)",
@@ -37,7 +38,17 @@ const theme = {
       },
       "h1,h2,h3,h4,h5,h6": {
         marginTop: rhythm(1.5),
-        marginBottom: rhythm(1),
+        marginBottom: rhythm(.5),
+      },
+      "::selection": {
+        color: "white",
+        textShadow: "none",
+        background: `${linkColor}`, 
+      },
+      "::-moz-selection": {
+        color: "white",
+        textShadow: "none",
+        background: `${linkColor}`, 
       },
       "small": {
         color: gray(30),
