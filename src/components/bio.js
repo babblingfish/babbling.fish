@@ -53,9 +53,9 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong>
+        Written by <strong>{author}</strong>, Data Engineer
         <br/>
-        This <a href={`https://github.com/`}>site</a> is built with <strong>Gatsby</strong> and <strong>React</strong>
+        This <a href={`https://github.com/mbass171/babbling.fish`}>site</a> is built with <strong>Gatsby</strong> and <strong>React</strong>
       </p>
     </div>
   )
