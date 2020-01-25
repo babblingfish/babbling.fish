@@ -6,15 +6,6 @@ img {
     background: #fdfdfd;
 }
 
-::selection {
-    text-shadow: none;
-    background:  #B4D5FF;
-}
-::-moz-selection {
-    text-shadow: none;
-    background:  #B4D5FF;
-}
-
 .vscode-highlight {
     --vscode-highlight-line-highlighted-background-color: rgba(255, 255, 255, 0.2); /* default: transparent */  
     --vscode-highlight-line-highlighted-border-color: rgba(255, 255, 255, 0.5); /* default: transparent */ 
