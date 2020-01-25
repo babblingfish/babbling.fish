@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "babbling-fish",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A personal blog for Matt Bass",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Matthew Bass",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/mbass171/babbling.fish/issues"
   },
   "dependencies": {
     "gatsby": "^2.15.15",
@@ -36,7 +36,7 @@
   "devDependencies": {
     "prettier": "^1.18.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://babbling.fish",
   "keywords": [
     "gatsby"
   ],
@@ -44,7 +44,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/mbass171/babbling.fish.git"
   },
   "scripts": {
     "build": "gatsby build",
