@@ -11,3 +11,7 @@ img {
     --vscode-highlight-line-highlighted-border-color: rgba(255, 255, 255, 0.5); /* default: transparent */ 
     --vscode-highlight-line-highlighted-border-width: 2px; /* default: 2px */
 }
+
+.foo {
+    color: white;
+}
