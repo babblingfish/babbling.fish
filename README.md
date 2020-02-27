@@ -9,7 +9,7 @@
   Babbling FIsh
 </h1>
 
-My personal blog about topics in Data Engineerings. Forked from [Gatsby blog starter](https://github.com/gatsbyjs/gatsby-starter-blog). The website's icon and all emojis designed by [OpenMoji](https://openmoji.org/) – the open-source emoji and icon project. License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/#). Thanks to [Dan Abramov](https://github.com/gaearon/overreacted.io) for showing me how to load fonts in Gatsby. My 404 page is copy pasted from his repo as well.
+My personal blog about topics in Data Engineering. The source code for this website was forked from [Gatsby blog starter](https://github.com/gatsbyjs/gatsby-starter-blog). The website's icon and all emojis designed by [OpenMoji](https://openmoji.org/) – the open-source emoji and icon project. License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/#). Thanks to [Dan Abramov](https://github.com/gaearon/overreacted.io) for showing me how to load fonts in Gatsby. My 404 page is copy pasted from his repo as well.
 
 ## Installation
 
