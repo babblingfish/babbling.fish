@@ -69,6 +69,12 @@ module.exports = {
         trackingId: `UA-111575178-2`,
       },
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `mattbass-1`,
+      },
+    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
