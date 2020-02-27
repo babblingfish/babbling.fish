@@ -7,14 +7,32 @@ import verticalRhythm from "compass-vertical-rhythm"
 
 const theme = {
   title: "Beach House",
-  baseFontSize: "18px",
-  baseLineHeight: "27px",
-  scaleRatio: 2.05,
-  headerFontFamily: ["Merriweather", "serif"],
-  bodyFontFamily: ["Roboto", "sans-serif"],
+  baseFontSize: "20px",
+  baseLineHeight: 1.618,
+  scaleRatio: 2.1,
+  headerFontFamily: ["Cormorant Garamond", "serif"],
+  bodyFontFamily: ["Proza Libre", "Roboto", "sans-serif"],
+  googleFonts: [
+    {
+      name: "Cormorant Garamond",
+      styles: ["500", "700"],
+    },
+    {
+      name: "Proza Libre",
+      styles: ["300", "300i", "400", "400i", "500", "500i"],
+    },
+    {
+      name: "Montserrat",
+      styles: ["400", "400i"],
+    },
+    {
+      name: "Source Code Pro",
+      styles: ["400"],
+    }
+  ],
   headerColor: "hsla(0,0%,0%,0.90)",
   bodyColor: "hsla(0,0%,0%,0.81)",
-  headerWeight: 500,
+  headerWeight: 700,
   bodyWeight: 400,
   boldWeight: 500,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
@@ -61,7 +79,7 @@ const theme = {
         marginBottom: 0,
       },
       "code": {
-        fontFamily: "Roboto Mono",
+        fontFamily: "Source Code Pro",
       },
       // Inline code
       "p code": {
@@ -75,6 +93,7 @@ const theme = {
       blockquote: {
         ...scale(1 / 5),
         borderLeft: `${rhythm(3 / 16)} solid ${linkColor}`,
+        fontFamily: "Montserrat",
         color: gray(30),
         paddingTop: rhythm(5 / 16), 
         paddingBottom: rhythm(5 / 16), 
