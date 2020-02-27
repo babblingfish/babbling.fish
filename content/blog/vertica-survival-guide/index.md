@@ -6,23 +6,27 @@ description: "A guide to using Vertica for data warehousing and ETL, for people 
 
 Vertica is a distributed database used for data warehousing and analytics. In order to properly design tables and queries it’s important to understand the key features. This is by no means comprehensive, I’d recommend checking out the official Vertica documentation for a more technical viewpoint.  The goal is to provide an intuitive understanding of first principles to allow a programmer familiar with SQL to get cracking.
 
-### Vertical Storage
+## Vertical Storage
 
-Records are stored in columnar order in Verica, rather than row order like OLTP databses e.g. MySQL, PostgreSQL. This allows the data to be highly encodable, compressible and reduces disk/network IO. Vertical storage is the key to understanding query optimization in Vertica. Everything that follows is only possible because of this design.
+Records are stored in columnar order in Verica, rather than row order like OLTP databses e.g. MySQL, PostgreSQL. This allows for massively parrallel processing, as well as highly encodable and compressible data. Vertical storage is the key to understanding query optimization in Vertica. It is also the common feature among most major data wharehouse technologies like BigQuery and RedShift.
 
-### Massively Parallel Processing
+## Massively Parallel Processing
 
-Vertica is designed to run in a cluster of nodes. The nodes have a shared nothing architecture meaning each node has its own hardware resources and the nodes communicate over the internet. Being distributed also makes it highly available and scalable, with the ability to add or subtract nodes. When designed correctly, the workload of a query is evenly spread across nodes creating ridiculous performance gains. When nodes have to communicate with each other this shows up as a `BROADCAST` in the query plan, I will refer to it as shuffling.  
+Vertica is designed to run in a cluster of nodes. The nodes have a shared nothing architecture meaning each node has its own hardware resources and the nodes communicate over the internet. Being distributed also makes it highly available and scalable, with the ability to add or subtract nodes. When designed correctly, the workload of a query is evenly spread across nodes creating ridiculous performance gains. When nodes have to communicate with each other this shows up as a `BROADCAST` in the query plan, I will refer to it as shuffling.
 
-### Projections
+Vertica is designed to do fact table to dimension table joins. The dimension tables are replicated across each node, so that joins can be done onto them locally on each node. When designed correctly, Vertica will perform a join locally on each node then collate the responses at the end.
 
-In Vertica Projections are what is stored in the physical storage layer. They are analogous to tables in other SQL databases, with similar features (strongly typed columns, uniqueness constraints). A projection can contain a set of columns from multiple tables like a materialized view. Every projection stores a separate copy of the data. One projection can contain a subset of another projection, but with different segmentation and sorting order. 
+## Projections
 
-Every table has a super projection containing all the columns of a logical table. You can create a projection optimized for a specific query. Projections offer high availability via buddy projections which are copies of the same projection, but the columns are stored on different nodes. Since every projection stores a complete copy of the data, mutating a projection will result in all of the buddy projections and derivative projections being mutated as well. Bad performance on delete operations has the potential to slow down the whole cluster through cascading projections. 
+In Vertica Projections are what is stored in the physical storage layer. They are analogous to tables in other SQL databases, with similar features (strongly typed columns, uniqueness constraints). A projection can contain a set of columns from multiple tables like a materialized view. Every projection stores a separate copy of the data. One projection can contain a subset of another projection, but with a different segmentation and sorting order.
 
-### Segmentation
+Every table has a super projection containing all the columns of a logical table. You can create a projection optimized for a specific query. Projections offer high availability via buddy projections which are copies of the same projection, but the columns are stored on different nodes. Since every projection stores a complete copy of the data, mutating a projection will result in all of the buddy projections and derivative projections being mutated as well. Bad performance on delete operations has the potential to slow down the whole cluster through cascading projections.
 
-Segmentation is where data is stored. The goal is to evenly distribute the data across the cluster for parallel query execution to avoid shuffling. This is done by using a hash key on a high cardinality and unique column like a user_id. Segmentation is best utilized on large fact tables. For small dimension tables you want it to be replicated across all nodes for quick in-memory hash joins. To do this you mark the table as unsegmented, so if the table is a small dimension table that easily fits in memory, this will allow the nodes to quickly cache the table into memory for a quick hash join.
+## Segmentation
+
+Segmentation is where the data is stored. For large tables, the goal is to evenly distribute the data across the cluster for parallel query execution to avoid shuffling. This is done by using a hash key on a unique identifier like a user_id, a hash key can contain multiple columns. If records need to be shuffled between nodes for a join you will see `GLOBAL RESEGMENT GROUPS` in the query plan. This is a hint that segmentation is a possible way to improve performance.
+
+For small dimension tables you want it to be replicated across all nodes. To do this you mark the table as `UNSEGMENTED ALL NODES` this will create a copy of the table in each node in the cluster. This will allow the each node to load the table into memory for quick hash joins. 
 
 ```sql
 -- fact table of transactions
@@ -49,7 +53,7 @@ CREATE TABLE products (
 ; 
 ```
 
-### Sorting and Cardinality
+## Sorting and Cardinality
 
 The sort order determines how the data is stored on disk. This is the primary way query performance is optimized. The order by clause determines the sort order. The goal is to use columns that get used in join, where, and group by clauses. Using a sort column in a join allows a merge join, a special optimized type of join that works by using two pointers on two sorted lists. When used correctly with segmentation a merge join allows records to be quickly joined on a node without any shuffling.
 
