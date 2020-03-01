@@ -7,34 +7,16 @@ import verticalRhythm from "compass-vertical-rhythm"
 
 const theme = {
   title: "Beach House",
-  baseFontSize: "20px",
-  baseLineHeight: 1.618,
-  scaleRatio: 2.1,
-  headerFontFamily: ["Cormorant Garamond", "serif"],
-  bodyFontFamily: ["Proza Libre", "Roboto", "sans-serif"],
-  googleFonts: [
-    {
-      name: "Cormorant Garamond",
-      styles: ["500", "700"],
-    },
-    {
-      name: "Proza Libre",
-      styles: ["300", "300i", "400", "400i", "500", "500i"],
-    },
-    {
-      name: "Montserrat",
-      styles: ["400", "400i"],
-    },
-    {
-      name: "Source Code Pro",
-      styles: ["400"],
-    }
-  ],
-  headerColor: "hsla(0,0%,0%,0.90)",
-  bodyColor: "hsla(0,0%,0%,0.81)",
+  baseFontSize: "19.2px",
+  baseLineHeight: "30.72px",
+  scaleRatio: 2,
+  headerFontFamily: ["Lato", "Ubuntu", "sans-serif"],
+  bodyFontFamily: ["Roboto", "sans-serif"],
+  headerColor: "hsla(0,0%,0%,0.82)",
+  bodyColor: "hsla(0,0%,0%,95)",
   headerWeight: 700,
-  bodyWeight: 400,
-  boldWeight: 500,
+  bodyWeight: 300,
+  boldWeight: 400,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
     const linkColor = "#455DD3"
     const backgroundColor = "#fdfdfd"
@@ -49,6 +31,9 @@ const theme = {
         textShadow:
           `.03em 0 ${backgroundColor},-.03em 0 ${backgroundColor},0 .03em ${backgroundColor},0 -.03em ${backgroundColor},.06em 0 ${backgroundColor},-.06em 0 ${backgroundColor},.09em 0 ${backgroundColor},-.09em 0 ${backgroundColor},.12em 0 ${backgroundColor},-.12em 0 ${backgroundColor},.15em 0 ${backgroundColor},-.15em 0 ${backgroundColor}`, // eslint-disable-line
         backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2.5px, rgba(0, 0, 0, 0) 2px)`, // eslint-disable-line
+      },
+      "h1 a, h2 a": {
+        backgroundPosition: "0 1.14em",
       },
       "a:hover,a:active": {
         textShadow: "none",
@@ -80,6 +65,7 @@ const theme = {
       },
       "code": {
         fontFamily: "Source Code Pro",
+        fontWeight: 400,
       },
       // Inline code
       "p code": {
