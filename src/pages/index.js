@@ -24,6 +24,7 @@ class BlogIndex extends React.Component {
                 <h2
                   style={{
                     marginBottom: rhythm(1 / 4),
+                    textShadow: `none`,
                   }}
                 >
                   <Link style={{ boxShadow: `none` }} to={node.fields.slug}>

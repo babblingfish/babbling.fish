@@ -52,7 +52,11 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
+      <p
+        style={{
+          fontFamily: `Montserrat`,
+        }}
+      >
         Written by <strong>{author}</strong>, Data Engineer
         <br/>
         This <a href={`https://github.com/mbass171/babbling.fish`}>site</a> is built with <strong>Gatsby</strong> and <strong>React</strong>
