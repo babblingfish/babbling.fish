@@ -7,16 +7,16 @@ import verticalRhythm from "compass-vertical-rhythm"
 
 const theme = {
   title: "Beach House",
-  baseFontSize: "19.2px",
-  baseLineHeight: "30.72px",
-  scaleRatio: 2,
-  headerFontFamily: ["Lato", "Ubuntu", "sans-serif"],
-  bodyFontFamily: ["Roboto", "sans-serif"],
+  baseFontSize: "21px",
+  baseLineHeight: 1.55,
+  scaleRatio: 2.2,
+  headerFontFamily: ["sofiapro-light", "sans-serif"],
+  bodyFontFamily: ["Source Serif Pro", "Roboto", "sans-serif"],
   headerColor: "hsla(0,0%,0%,0.82)",
-  bodyColor: "hsla(0,0%,0%,95)",
+  bodyColor: "hsla(0,0%,0%,91)",
   headerWeight: 700,
   bodyWeight: 300,
-  boldWeight: 400,
+  boldWeight: 600,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
     const linkColor = "#455DD3"
     const backgroundColor = "#fdfdfd"
@@ -32,8 +32,8 @@ const theme = {
           `.03em 0 ${backgroundColor},-.03em 0 ${backgroundColor},0 .03em ${backgroundColor},0 -.03em ${backgroundColor},.06em 0 ${backgroundColor},-.06em 0 ${backgroundColor},.09em 0 ${backgroundColor},-.09em 0 ${backgroundColor},.12em 0 ${backgroundColor},-.12em 0 ${backgroundColor},.15em 0 ${backgroundColor},-.15em 0 ${backgroundColor}`, // eslint-disable-line
         backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2.5px, rgba(0, 0, 0, 0) 2px)`, // eslint-disable-line
       },
-      "h1 a, h2 a": {
-        backgroundPosition: "0 1.14em",
+      "h2 a:hover": {
+        color: "hsla(0,0%,0%,0.72)",
       },
       "a:hover,a:active": {
         textShadow: "none",
@@ -56,7 +56,8 @@ const theme = {
       "small": {
         color: gray(30),
         fontWeight: 300,
-        fontSize: "16px",
+        fontSize: "18px",
+        fontFamily: "sofiapro-light",
       },
       // children ol, ul
       "li>ol,li>ul": {
@@ -67,9 +68,13 @@ const theme = {
         fontFamily: "Source Code Pro",
         fontWeight: 400,
       },
+      "code a": {
+        textShadow: "none",
+        backgroundImage: "none",
+      },
       // Inline code
       "p code": {
-        backgroundColor: "rgba(27,31,35,.05)",
+        backgroundColor: "rgba(27,31,35,.10)",
         padding: ".2em .4em",
         margin: 0,
         fontSize: "85%",

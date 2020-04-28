@@ -1,15 +1,3 @@
-/* lato-700 - latin_latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Lato Bold'), local('Lato-Bold'),
-    url('./files/lato-v16-latin_latin-ext-700.woff2') format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('./files/lato-v16-latin_latin-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 /* montserrat-regular - latin_latin-ext_vietnamese_cyrillic-ext_cyrillic */
 @font-face {
   font-family: 'Montserrat';
@@ -37,76 +25,28 @@
       url('./files/montserrat-v14-latin_latin-ext_vietnamese_cyrillic-ext_cyrillic-italic.woff')
       format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* roboto-300 - latin_latin-ext_vietnamese_cyrillic-ext_greek-ext_cyrillic_greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Roboto Light'), local('Roboto-Light'),
-    url('./files/roboto-v20-latin_latin-ext_vietnamese_cyrillic-ext_greek-ext_cyrillic_greek-300.woff2')
-      format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('./files/roboto-v20-latin_latin-ext_vietnamese_cyrillic-ext_greek-ext_cyrillic_greek-300.woff')
-      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 
-/* roboto-300italic - latin_latin-ext_vietnamese_cyrillic-ext_greek-ext_cyrillic_greek */
+/* roboto-regular - greek-ext_greek */
 @font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
-    url('./files/roboto-v20-latin_latin-ext_vietnamese_cyrillic-ext_greek-ext_cyrillic_greek-300italic.woff2')
-      format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('./files/roboto-v20-latin_latin-ext_vietnamese_cyrillic-ext_greek-ext_cyrillic_greek-300italic.woff')
-      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     font-display: swap;
+     src: local('Roboto'), local('Roboto-Regular'),
+          url('./files/roboto-v20-greek-ext_greek-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('./files/roboto-v20-greek-ext_greek-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+     
 
-/* roboto-regular - latin_latin-ext_vietnamese_cyrillic-ext_greek-ext_cyrillic_greek */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'),
-    url('./files/roboto-v20-latin_latin-ext_vietnamese_cyrillic-ext_greek-ext_cyrillic_greek-regular.woff2')
-      format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('./files/roboto-v20-latin_latin-ext_vietnamese_cyrillic-ext_greek-ext_cyrillic_greek-regular.woff')
-      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     font-family: 'sofiapro-light';
+     src: url('./files/sofiapro-light-webfont.woff2') format('woff2'),
+          url('./files/sofiapro-light-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
 }
-
-/* roboto-italic - latin_latin-ext_vietnamese_cyrillic-ext_greek-ext_cyrillic_greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Roboto Italic'), local('Roboto-Italic'),
-    url('./files/roboto-v20-latin_latin-ext_vietnamese_cyrillic-ext_greek-ext_cyrillic_greek-italic.woff2')
-      format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('./files/roboto-v20-latin_latin-ext_vietnamese_cyrillic-ext_greek-ext_cyrillic_greek-italic.woff')
-      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* source-code-pro-300 - latin_latin-ext_vietnamese_cyrillic-ext_cyrillic_greek */
-@font-face {
-  font-family: 'Source Code Pro';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Source Code Pro Light'), local('SourceCodePro-Light'),
-    url('./files/source-code-pro-v11-latin_latin-ext_vietnamese_cyrillic-ext_cyrillic_greek-300.woff2')
-      format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('./files/source-code-pro-v11-latin_latin-ext_vietnamese_cyrillic-ext_cyrillic_greek-300.woff')
-      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
+   
 /* source-code-pro-regular - latin_latin-ext_vietnamese_cyrillic-ext_cyrillic_greek */
 @font-face {
   font-family: 'Source Code Pro';
@@ -121,16 +61,25 @@
       format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* ubuntu-700 - latin_latin-ext_cyrillic-ext_greek-ext_cyrillic_greek */
+/* source-serif-pro-regular - latin-ext_latin */
 @font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
-    url('./files/ubuntu-v14-latin_latin-ext_cyrillic-ext_greek-ext_cyrillic_greek-700.woff2')
-      format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('./files/ubuntu-v14-latin_latin-ext_cyrillic-ext_greek-ext_cyrillic_greek-700.woff')
-      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     font-family: 'Source Serif Pro';
+     font-style: normal;
+     font-weight: 400;
+     font-display: swap;
+     src: local('Source Serif Pro'), local('SourceSerifPro-Regular'),
+          url('./files/source-serif-pro-v7-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('./files/source-serif-pro-v7-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+   
+/* source-serif-pro-600 - latin-ext_latin */
+@font-face {
+     font-family: 'Source Serif Pro';
+     font-style: normal;
+     font-weight: 600;
+     font-display: swap;
+     src: local('Source Serif Pro Semibold'), local('SourceSerifPro-Semibold'),
+          url('./files/source-serif-pro-v7-latin-ext_latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('./files/source-serif-pro-v7-latin-ext_latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+   
