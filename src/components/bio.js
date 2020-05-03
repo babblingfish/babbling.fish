@@ -9,6 +9,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
@@ -57,9 +60,20 @@ const Bio = () => {
           fontFamily: `Montserrat`,
         }}
       >
-        Written by <strong>{author}</strong>, Data Engineer
-        <br/>
-        This <a href={`https://github.com/mbass171/babbling.fish`}>site</a> is built with <strong>Gatsby</strong> and <strong>React</strong>
+        Written by <strong>{author}</strong>
+        {` `}
+        <a 
+          style={{
+            backgroundImage: `none`,
+          }}
+          target={`_blank`}
+          rel={`noopener noreferrer`}
+          href={`https://github.com/mbass171/babbling.fish`}
+        >
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <br />
+        A personal blog about Data Engineering.
       </p>
     </div>
   )

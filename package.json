@@ -8,6 +8,9 @@
     "url": "https://github.com/mbass171/babbling.fish/issues"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "gatsby": "^2.15.15",
     "gatsby-image": "^2.2.19",
     "gatsby-plugin-disqus": "^1.1.4",
