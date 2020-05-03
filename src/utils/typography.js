@@ -7,8 +7,8 @@ import verticalRhythm from "compass-vertical-rhythm"
 
 const theme = {
   title: "Beach House",
-  baseFontSize: "21px",
-  baseLineHeight: 1.55,
+  baseFontSize: "20px",
+  baseLineHeight: 1.575,
   scaleRatio: 2.2,
   headerFontFamily: ["sofiapro-light", "sans-serif"],
   bodyFontFamily: ["Source Serif Pro", "Roboto", "sans-serif"],
@@ -34,6 +34,9 @@ const theme = {
       },
       "h2 a:hover": {
         color: "hsla(0,0%,0%,0.72)",
+      },
+      "p a": {
+        backgroundPosition: "0 1.2em",
       },
       "a:hover,a:active": {
         textShadow: "none",
