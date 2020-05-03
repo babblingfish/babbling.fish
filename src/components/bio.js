@@ -74,17 +74,7 @@ const Bio = () => {
           rel={`noopener noreferrer`}
           href={`https://github.com/mbass171/babbling.fish`}
         >
-          <FontAwesomeIcon 
-            icon={faGithub} 
-            stye={{ 
-              fontSize: `1em`,
-              display: `inline-block`,
-              fontSize: `inherit`,
-              height: `1em`,
-              overflow: `visible`,
-              verticalAlign: `-0.125em`,
-            }} 
-          />
+          <FontAwesomeIcon icon={faGithub} />
         </a>
         <br />
         A personal blog about Data Engineering.
