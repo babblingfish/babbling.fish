@@ -9,7 +9,14 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { rhythm } from "../utils/typography"
+
+config.autoAddCss = false
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -57,9 +64,30 @@ const Bio = () => {
           fontFamily: `Montserrat`,
         }}
       >
-        Written by <strong>{author}</strong>, Data Engineer
-        <br/>
-        This <a href={`https://github.com/mbass171/babbling.fish`}>site</a> is built with <strong>Gatsby</strong> and <strong>React</strong>
+        Written by <strong>{author}</strong>
+        {` `}
+        <a 
+          style={{
+            backgroundImage: `none`,
+          }}
+          target={`_blank`}
+          rel={`noopener noreferrer`}
+          href={`https://github.com/mbass171/babbling.fish`}
+        >
+          <FontAwesomeIcon 
+            icon={faGithub} 
+            stye={{ 
+              fontSize: `1em`,
+              display: `inline-block`,
+              fontSize: `inherit`,
+              height: `1em`,
+              overflow: `visible`,
+              verticalAlign: `-0.125em`,
+            }} 
+          />
+        </a>
+        <br />
+        A personal blog about Data Engineering.
       </p>
     </div>
   )
