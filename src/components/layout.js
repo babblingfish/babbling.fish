@@ -68,9 +68,6 @@ class Layout extends React.Component {
             fontSize: `16px`,
           }}>
             © {new Date().getFullYear()}
-            <a href="/rss.xml" style={{ boxShadow: `none`, float: `right` }} target="_blank" rel="noopener noreferrer">
-              rss
-            </a>
         </footer>
       </div>
     )

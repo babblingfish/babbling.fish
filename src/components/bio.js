@@ -11,7 +11,8 @@ import Image from "gatsby-image"
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
+import { faRss } from "@fortawesome/fontawesome-free-solid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { rhythm } from "../utils/typography"
@@ -75,6 +76,31 @@ const Bio = () => {
           href={`https://github.com/mbass171/babbling.fish`}
         >
           <FontAwesomeIcon icon={faGithub} />
+          <span class={`hidden`}>Github</span>
+        </a>
+        {` `}
+        <a 
+          style={{
+            backgroundImage: `none`,
+          }}
+          target={`_blank`}
+          rel={`noopener noreferrer`}
+          href={`https://linkedin.com/in/babbling-fish`}
+        >
+          <FontAwesomeIcon icon={faLinkedinIn} />
+          <span class={`hidden`}>Linked In</span>
+        </a>
+        {` `}
+        <a 
+          style={{
+            backgroundImage: `none`,
+          }}
+          target={`_blank`}
+          rel={`noopener noreferrer`}
+          href={`/rss.xml`}
+        >
+          <FontAwesomeIcon icon={faRss} />
+          <span class={`hidden`}>RSS</span>
         </a>
         <br />
         A personal blog about Data Engineering.
