@@ -12,6 +12,17 @@
       format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* montserrat-600 - vietnamese_latin-ext_latin_cyrillic-ext_cyrillic */
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 600;
+     font-display: swap;
+     src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+          url('./files/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('./files/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}   
+
 /* montserrat-italic - latin_latin-ext_vietnamese_cyrillic-ext_cyrillic */
 @font-face {
   font-family: 'Montserrat';
