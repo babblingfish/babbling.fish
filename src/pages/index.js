@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
+import Category from "../components/category"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -38,6 +39,8 @@ class BlogIndex extends React.Component {
                   </Link>
                 </h2>
                 <small>{node.frontmatter.date}</small>
+                {` `}
+                <Category category={node.frontmatter.category} />
               </header>
               <section>
                 <p
@@ -74,6 +77,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            category
           }
         }
       }
