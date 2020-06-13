@@ -27,10 +27,11 @@ class BlogIndex extends React.Component {
                     textShadow: `none`,
                   }}
                 >
-                  <Link style={{ 
-                          boxShadow: `none`,
-                          backgroundPosition: `0 1.3em`,
-                        }} 
+                  <Link
+                    style={{
+                      boxShadow: `none`,
+                      backgroundPosition: `0 1.3em`,
+                    }}
                     to={node.fields.slug}
                   >
                     {title}
