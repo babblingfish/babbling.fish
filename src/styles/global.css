@@ -33,6 +33,7 @@ input {
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
   width: 350px;
+  max-width: 90%;
 }
 
 figure .image {
@@ -64,6 +65,7 @@ figcaption {
   background-color: #fdfdfd;
   position: absolute;
   width: 400px;
+  max-width: 100%;
   padding: 30px;
   border-radius: 5px;
   border: 2px solid black;
