@@ -6,6 +6,7 @@ export default class Category extends React.Component {
       "Python + SQL": "#b8860b",
       "Web Scraping": "#B30000",
       "Language": "#006081",
+      "Databases": "#603267",
     }
 
     if (category in colorMap) {
@@ -21,7 +22,6 @@ export default class Category extends React.Component {
 
     return <small 
             style={{
-                //  color: "white",
                  color: color, 
                  borderRadius: "10px",
                  padding: "2px 5px 2px 5px",

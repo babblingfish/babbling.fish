@@ -2,6 +2,7 @@
 title: Vertica Survival Guide
 date: "2019-12-26T22:12:03.284Z"
 description: "A guide to using Vertica for data warehousing and ETL, for people who already know SQL"
+category: "Databases"
 ---
 
 Vertica is a distributed database used for data warehousing and analytics. In order to properly design tables and queries it’s important to understand the key features. This is by no means comprehensive, I’d recommend checking out the official Vertica documentation for a more technical viewpoint.  The goal is to provide an intuitive understanding of first principles to allow a programmer familiar with SQL to get cracking.
