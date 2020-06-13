@@ -75,7 +75,7 @@ const Bio = () => {
             marginBottom: 0,
           }}
         >
-          A blog written by {author}
+          Written by {author}
           {` `}
           <a 
             style={{
