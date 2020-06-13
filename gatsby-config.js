@@ -89,6 +89,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+          endpoint: 'https://fish.us19.list-manage.com/subscribe/post?u=500fdd2fd194d5d134a52df4f&amp;id=80f458b9df', 
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
