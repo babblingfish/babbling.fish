@@ -25,7 +25,7 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 75, height: 75) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -55,7 +55,7 @@ const Bio = () => {
           marginRight: rhythm(1 / 2),
           marginTop: rhythm(1 / 5),
           marginBottom: 0,
-          minWidth: 50,
+          minWidth: 75,
           borderRadius: `100%`,
         }}
         imgStyle={{
@@ -73,6 +73,7 @@ const Bio = () => {
           style={{
             fontFamily: `Montserrat`,
             marginBottom: 0,
+            maxWidth: `600px`,
           }}
         >
           Written by {author}
@@ -112,6 +113,8 @@ const Bio = () => {
             <FontAwesomeIcon icon={faRss} />
             <span className={`hidden`}>RSS</span>
           </a>
+          <br />
+          Exploring topics in Data 
         </p>
         <PopUp />
       </div>

@@ -14,9 +14,8 @@ img {
   background-color: #455dd3;
   border: 0;
   border-radius: 0.25rem;
-  /* background: #d3bb45; */
   color: white;
-  font-family: -system-ui, sans-serif;
+  font-family: system-ui;
   font-size: 1rem;
   line-height: 1.2;
   white-space: nowrap;
@@ -66,7 +65,7 @@ figcaption {
   position: absolute;
   width: 400px;
   max-width: 100%;
-  padding: 30px;
+  padding: 20px;
   border-radius: 5px;
   border: 2px solid black;
 }
