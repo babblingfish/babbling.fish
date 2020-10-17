@@ -23,9 +23,8 @@ export default class PopUp extends React.Component {
               onKeyDown={this.togglePop}
               tabIndex={0}
             >
-              Subscribe
+              Newsletter
             </button>
-            to the Newsletter
           </p>
           {this.state.visible ? <Mail toggle={this.togglePop} /> : null}
         </div>

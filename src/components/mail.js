@@ -28,8 +28,8 @@ export default class Mail extends React.Component {
       throw Error(msg)
     } else {
       this.setState({ success: true })
+      setTimeout(() => { this.handleClick() }, 2500)
     }
-
     this.setState({ result: result })
   }
 
@@ -47,6 +47,9 @@ export default class Mail extends React.Component {
             onKeyDown={this.handleClick}
             role="button"
             tabIndex={0}
+            style={{
+                fontSize: "20px",
+            }}
           >
             &times;
           </span>
@@ -82,7 +85,7 @@ export default class Mail extends React.Component {
             />
             <br />
             <button type="submit" value="Submit" className="button">
-              Submit
+              SUBMIT
             </button>
           </form>
           <div className={`${this.state.success ? "" : "hidden"}`}>
