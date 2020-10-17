@@ -72,25 +72,23 @@
       format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* source-serif-pro-regular - latin-ext_latin */
+/* source-sans-pro-regular - latin */
 @font-face {
-     font-family: 'Source Serif Pro';
-     font-style: normal;
-     font-weight: 400;
-     font-display: swap;
-     src: local('Source Serif Pro'), local('SourceSerifPro-Regular'),
-          url('./files/source-serif-pro-v7-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('./files/source-serif-pro-v7-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('./files/source-sans-pro-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./files/source-sans-pro-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-   
-/* source-serif-pro-600 - latin-ext_latin */
+/* source-sans-pro-italic - latin */
 @font-face {
-     font-family: 'Source Serif Pro';
-     font-style: normal;
-     font-weight: 600;
-     font-display: swap;
-     src: local('Source Serif Pro Semibold'), local('SourceSerifPro-Semibold'),
-          url('./files/source-serif-pro-v7-latin-ext_latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('./files/source-serif-pro-v7-latin-ext_latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'),
+       url('./files/source-sans-pro-v14-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./files/source-sans-pro-v14-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-   
