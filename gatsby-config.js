@@ -30,10 +30,10 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 700,
+              maxWidth: 740,
               linkImagesToOriginal: true,
-              // showCaptions: true,
-              tracedSVG: true,
+              showCaptions: true,
+              // tracedSVG: true,
               quality: 100,
             },
           },
