@@ -16,7 +16,7 @@ const theme = {
   bodyColor: "hsla(0,0%,0%,91)",
   headerWeight: 700,
   bodyWeight: 400,
-  boldWeight: 600,
+  boldWeight: 500,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
     const linkColor = "#455DD3"
     const backgroundColor = "#fdfdfd"
