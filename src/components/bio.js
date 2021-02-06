@@ -15,7 +15,7 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { faRss } from "@fortawesome/fontawesome-free-solid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import PopUp from "./popup"
+import Mail from "./mail"
 import { rhythm } from "../utils/typography"
 
 config.autoAddCss = false
@@ -116,7 +116,7 @@ const Bio = () => {
           <br />
           Exploring topics in Data 
         </p>
-        <PopUp />
+        <Mail />
       </div>
     </div>
   )

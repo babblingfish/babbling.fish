@@ -6,7 +6,6 @@ import { rhythm } from "../utils/typography"
 export default class Mail extends React.Component {
   state = {
     email: null,
-    firstName: null,
     result: null,
     success: false,
   }
@@ -22,13 +21,13 @@ export default class Mail extends React.Component {
 
   _handleSubmit = async e => {
     e.preventDefault()
-    const { result, msg } = await addToMailchimp(this.state.email, { FNAME: this.state.firstName })
+    const { result, msg } = await addToMailchimp(this.state.email)
 
     if (result !== "success") {
       throw Error(msg)
     } else {
       this.setState({ success: true })
-      setTimeout(() => { this.handleClick() }, 2500)
+      setTimeout(() => { this.handleClick() }, 2500)  // close after delay
     }
     this.setState({ result: result })
   }
@@ -41,18 +40,6 @@ export default class Mail extends React.Component {
     return (
       <div className="modal">
         <div className="modal_content">
-          <span
-            className="close"
-            onClick={this.handleClick}
-            onKeyDown={this.handleClick}
-            role="button"
-            tabIndex={0}
-            style={{
-                fontSize: "20px",
-            }}
-          >
-            &times;
-          </span>
           <form
             onSubmit={this._handleSubmit}
             className={`${this.state.success ? "hidden" : ""}`}
@@ -60,33 +47,20 @@ export default class Mail extends React.Component {
               marginBottom: 0,
             }}
           >
-            <p
-              style={{
-                marginBottom: rhythm(1 / 4),
-              }}
-            >
-              Email Address <span style={{ color: "red" }}>*</span>
-            </p>
-            <input
-              required
-              type="email"
-              onChange={this._handleChange}
-              placeholder="Email"
-              name="email"
-              style={{ marginBottom: rhythm(1 / 4) }}
-            />
-            <p style={{ marginBottom: rhythm(1 / 4) }}>First Name</p>
-            <input
-              type="text"
-              onChange={this._handleChange}
-              placeholder="First Name"
-              name="firstName"
-              style={{ marginBottom: rhythm(1 / 4) }}
-            />
-            <br />
-            <button type="submit" value="Submit" className="button">
-              SUBMIT
-            </button>
+            <div className="newsletter">
+              <input
+                required
+                type="email"
+                onChange={this._handleChange}
+                placeholder="matt.bass@babbling.fish"
+                name="email"
+                style={{ marginBottom: rhythm(1 / 2) }}
+                className="email"
+              />
+              <button type="submit" value="Submit" className="submit">
+                Subscribe
+              </button>
+            </div>
           </form>
           <div className={`${this.state.success ? "" : "hidden"}`}>
             Thank you for subscribing!
