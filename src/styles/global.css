@@ -53,6 +53,11 @@ img {
   cursor: pointer;
 }
 
+.author {
+  font-weight: 600;
+  color: #455dd3;
+}
+
 figure .image {
   width: 100%;
 }

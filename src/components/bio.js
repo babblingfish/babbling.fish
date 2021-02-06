@@ -76,7 +76,11 @@ const Bio = () => {
             maxWidth: `600px`,
           }}
         >
-          Written by {author}
+          Written by
+          {` `}
+          <span className="author">
+            {author}
+          </span>
           {` `}
           <a 
             style={{
