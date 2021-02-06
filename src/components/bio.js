@@ -117,6 +117,8 @@ const Bio = () => {
             <FontAwesomeIcon icon={faEnvelope} />
             <span className={`hidden`}>Email</span>
           </a>
+          <br />
+          Exploring topics in Data 
           {` `}
           <a 
             style={{
@@ -129,8 +131,6 @@ const Bio = () => {
             <FontAwesomeIcon icon={faRss} />
             <span className={`hidden`}>RSS</span>
           </a>
-          <br />
-          Exploring topics in Data 
         </p>
         <Mail />
       </div>

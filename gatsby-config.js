@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Babbling Fish`,
     author: `Matt Bass`,
-    description: `A blog about data engineering`,
+    description: `A personal blog exploring topics in data.`,
     siteUrl: `http://babbling.fish/`,
     social: {
       github: `mbass171`,
@@ -23,6 +23,7 @@ module.exports = {
         name: `assets`,
       },
     },
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -33,7 +34,6 @@ module.exports = {
               maxWidth: 740,
               linkImagesToOriginal: true,
               showCaptions: true,
-              // tracedSVG: true,
               quality: 100,
             },
           },
