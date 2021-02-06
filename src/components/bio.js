@@ -12,7 +12,7 @@ import Image from "gatsby-image"
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
-import { faRss } from "@fortawesome/fontawesome-free-solid"
+import { faEnvelope, faRss } from "@fortawesome/fontawesome-free-solid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Mail from "./mail"
@@ -104,6 +104,18 @@ const Bio = () => {
           >
             <FontAwesomeIcon icon={faLinkedinIn} />
             <span className={`hidden`}>Linked In</span>
+          </a>
+          {` `}
+          <a 
+            style={{
+              backgroundImage: `none`,
+            }}
+            target={`_blank`}
+            rel={`noopener noreferrer`}
+            href={`matt.bass@babbling.fish`}
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
+            <span className={`hidden`}>Email</span>
           </a>
           {` `}
           <a 
