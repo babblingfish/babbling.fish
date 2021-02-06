@@ -67,10 +67,11 @@ figcaption {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 740px;
+  max-width: 100%;
   font-style: italic;
-  font-family: Arial;
-  font-size: 16px;
+  font-family: "Spectral Italic";
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .vscode-highlight {
