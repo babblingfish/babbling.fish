@@ -7,11 +7,11 @@ import verticalRhythm from "compass-vertical-rhythm"
 
 const theme = {
   title: "Beach House",
-  baseFontSize: "21px",
+  baseFontSize: "19px",
   baseLineHeight: 1.575,
   scaleRatio: 2.2,
   headerFontFamily: ["sofiapro-light", "sans-serif"],
-  bodyFontFamily: ["Source Sans Pro", "Roboto", "sans-serif"],
+  bodyFontFamily: ["Spectral", "Roboto", "sans-serif"],
   headerColor: "hsla(0,0%,0%,0.82)",
   bodyColor: "hsla(0,0%,0%,91)",
   headerWeight: 700,
