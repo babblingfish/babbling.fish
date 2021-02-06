@@ -52,7 +52,7 @@ export default class Mail extends React.Component {
                 required
                 type="email"
                 onChange={this._handleChange}
-                placeholder="matt.bass@babbling.fish"
+                placeholder="Your Email"
                 name="email"
                 style={{ marginBottom: rhythm(1 / 2) }}
                 className="email"

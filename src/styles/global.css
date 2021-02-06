@@ -1,5 +1,7 @@
 html {
   background-color: #fdfdfd;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 img {
@@ -14,7 +16,7 @@ img {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
-  max-width: 320px;
+  max-width: 350px;
 }
 
 .email {
@@ -29,8 +31,7 @@ img {
   font-size: 14px;
   line-height: 19px;
   padding: 0.25rem 0.5rem;
-  width: 310px;
-  max-width: 90%;
+  width: 100%;
   margin-bottom: 0;
 
 }
@@ -39,7 +40,7 @@ img {
   flex-shrink: 0;
   margin-top: 0;
   margin-left: 0;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.5rem;
   height: 2rem;
   background: #455dd3;
   border: 1px solid #455dd3;
