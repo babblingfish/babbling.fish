@@ -71,8 +71,8 @@ figcaption {
   max-width: 100%;
   font-style: italic;
   font-family: "Spectral Italic";
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 0.9rem;
+  line-height: 1.35rem;
 }
 
 .vscode-highlight {
