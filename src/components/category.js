@@ -3,10 +3,11 @@ import React from "react"
 export default class Category extends React.Component {
   getColor = category => {
     const colorMap = {
-      "Python + SQL": "#b8860b",
-      "Web Scraping": "#B30000",
-      "Language": "#006081",
-      "Databases": "#603267",
+      "Tutorial": "#ff00ad",
+      "How-to": "#B30000",
+      "Reference": "#006081",
+      "Explanation": "#603267",
+      "Personl Essay": "#b8860b",
     }
 
     if (category in colorMap) {
