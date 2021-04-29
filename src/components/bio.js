@@ -66,13 +66,12 @@ const Bio = () => {
         style={{
           display: `flex`,
           flexDirection: `column`,
-          fontFamily: `Montserrat`,
         }}
       >
         <p
           style={{
-            fontFamily: `Montserrat`,
-            marginBottom: 0,
+            fontFamily: `Josefin Sans`,
+            marginBottom: rhythm(1 / 5),
             maxWidth: `600px`,
           }}
         >
@@ -117,8 +116,6 @@ const Bio = () => {
             <FontAwesomeIcon icon={faEnvelope} />
             <span className={`hidden`}>Email</span>
           </a>
-          <br />
-          Exploring topics in Data 
           {` `}
           <a 
             style={{

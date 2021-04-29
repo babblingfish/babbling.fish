@@ -7,19 +7,19 @@ import verticalRhythm from "compass-vertical-rhythm"
 
 const theme = {
   title: "Beach House",
-  baseFontSize: "21px",
+  baseFontSize: "20px",
   baseLineHeight: 1.575,
   scaleRatio: 2.2,
-  headerFontFamily: ["sofiapro-light", "sans-serif"],
-  bodyFontFamily: ["Spectral", "Roboto", "sans-serif"],
+  headerFontFamily: ["Abril Fatface", "serif"],
+  bodyFontFamily: ["Lora", "Roboto", "sans-serif"],
   headerColor: "hsla(0,0%,0%,0.82)",
   bodyColor: "hsla(0,0%,0%,91)",
-  headerWeight: 700,
+  headerWeight: 400,
   bodyWeight: 400,
   boldWeight: 500,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
-    const linkColor = "#455DD3"
-    const backgroundColor = "#fdfdfd"
+    const linkColor = "#28a5e9"
+    const backgroundColor = "#FDF6F2"
     const vr = verticalRhythm({
       baseFontSize: "16px",
       baseLineHeight: "1.55",
@@ -45,6 +45,10 @@ const theme = {
       "h1,h2,h3,h4,h5,h6": {
         marginTop: rhythm(1.5),
         marginBottom: rhythm(.5),
+      },
+      "h3,h4,h5,h6": {
+        fontFamily: `Josefin Sans`,
+        fontWeight: 700,
       },
       "::selection": {
         color: "white",

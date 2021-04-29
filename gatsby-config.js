@@ -87,7 +87,7 @@ module.exports = {
         short_name: `Babbling Fish`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#455DD3`,
+        theme_color: `#28a5e9`,
         display: `minimal-ui`,
         icon: `content/assets/fish-icon.svg`,
       },
