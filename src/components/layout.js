@@ -16,6 +16,7 @@ class Layout extends React.Component {
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            fontFamily: `Abril Fatface`,
           }}
         >
           <Link
@@ -36,6 +37,7 @@ class Layout extends React.Component {
         <h3
           style={{
             marginTop: 0,
+            fontFamily: `Abril Fatface`,
           }}
         >
           <Link
@@ -66,6 +68,8 @@ class Layout extends React.Component {
         <footer
           style={{
             fontSize: `16px`,
+            fontFamily: `Josefin Sans`,
+            fontWeight: 600,
           }}>
             © {new Date().getFullYear()}
         </footer>

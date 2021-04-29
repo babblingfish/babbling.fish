@@ -1,11 +1,21 @@
 html {
-  background-color: #fdfdfd;
+  background-color: #FDF6F2;
   max-width: 100%;
   overflow-x: hidden;
 }
 
 img {
-  background: #fdfdfd;
+  background: #FDF6F2;
+}
+
+hr {
+  border: none;
+}
+
+hr::before {
+  content: '***';
+  display: block;
+  text-align: center;
 }
 
 .hidden {
@@ -23,7 +33,7 @@ img {
   background-color: inherit;
   display: inline-block;
   height: 2rem;
-  border: 1px solid #455dd3;
+  border: 1px solid #28a5e9;
   border-radius: 0.25rem;
   border-right-width: 0;
   border-radius: 5px 0 0 5px;
@@ -33,7 +43,10 @@ img {
   padding: 0.25rem 0.5rem;
   width: 100%;
   margin-bottom: 0;
+}
 
+textarea:focus, input:focus{
+  outline: none;
 }
 
 .submit {
@@ -42,8 +55,8 @@ img {
   margin-left: 0;
   padding: 0.25rem 0.5rem;
   height: 2rem;
-  background: #455dd3;
-  border: 1px solid #455dd3;
+  background: #28a5e9;
+  border: 1px solid #28a5e9;
   border-radius: 0 0.25rem 0.25rem 0;
   color: white;
   font-family: "Montserrat";
@@ -55,8 +68,12 @@ img {
 }
 
 .author {
-  font-weight: 600;
-  color: #455dd3;
+  font-weight: 700;
+  color: #28a5e9;
+}
+
+footer {
+  font-family: "Josefin Sans Bold";
 }
 
 figure .image {
@@ -70,7 +87,7 @@ figcaption {
   margin-right: auto;
   max-width: 100%;
   font-style: italic;
-  font-family: "Spectral Italic";
+  font-family: "Lora Italic";
   font-size: 0.9rem;
   line-height: 1.35rem;
 }
