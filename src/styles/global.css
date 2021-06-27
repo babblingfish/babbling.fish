@@ -6,10 +6,16 @@ html {
 
 img {
   background: #FDF6F2;
+  box-shadow: none !important;
 }
 
 hr {
-  border: none;
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;                
+  background-color:#FDF6F2;
+  height: 1px;
 }
 
 hr::before {
@@ -55,8 +61,8 @@ textarea:focus, input:focus{
   margin-left: 0;
   padding: 0.25rem 0.5rem;
   height: 2rem;
-  background: #28a5e9;
-  border: 1px solid #28a5e9;
+  background: #2084ba;
+  border: 1px solid #2084ba;
   border-radius: 0 0.25rem 0.25rem 0;
   color: white;
   font-family: "Montserrat";
@@ -69,7 +75,7 @@ textarea:focus, input:focus{
 
 .author {
   font-weight: 700;
-  color: #28a5e9;
+  color: #2084ba;
 }
 
 footer {
@@ -87,7 +93,7 @@ figcaption {
   margin-right: auto;
   max-width: 100%;
   font-style: italic;
-  font-family: "Lora Italic";
+  font-family: "Lora";
   font-size: 0.9rem;
   line-height: 1.35rem;
 }
