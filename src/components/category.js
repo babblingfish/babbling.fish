@@ -5,9 +5,9 @@ export default class Category extends React.Component {
     const colorMap = {
       "Tutorial": "#ff00ad",
       "How-to": "#B30000",
-      "Reference": "#006081",
+      "Reference": "#49a57a",
       "Explanation": "#603267",
-      "Personal Essay": "#0b4a6d",
+      "Personal Essay": "#7a49a5",
     }
 
     if (category in colorMap) {
@@ -26,7 +26,8 @@ export default class Category extends React.Component {
                  color: color, 
                  borderRadius: "10px",
                  padding: "2px 5px 2px 5px",
-                 fontFamily: `Josefin Sans`,
+                 fontFamily: `Lora`,
+                 fontStyle: 'italic',
                  fontWeight: 600,
                 }}
             >
