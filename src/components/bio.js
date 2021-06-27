@@ -9,18 +9,18 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import { config } from '@fortawesome/fontawesome-svg-core'
+import "@fortawesome/fontawesome-svg-core/styles.css"
+import { config } from "@fortawesome/fontawesome-svg-core"
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, faRss } from "@fortawesome/fontawesome-free-solid"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Mail from "./mail"
 import { rhythm } from "../utils/typography"
 
 config.autoAddCss = false
 
-const Bio = () => {  
+const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
@@ -77,11 +77,9 @@ const Bio = () => {
         >
           Written by
           {` `}
-          <span className="author">
-            {author}
-          </span>
+          <span className="author">{author}</span>
           {` `}
-          <a 
+          <a
             style={{
               backgroundImage: `none`,
             }}
@@ -93,7 +91,7 @@ const Bio = () => {
             <span className={`hidden`}>Github</span>
           </a>
           {` `}
-          <a 
+          <a
             style={{
               backgroundImage: `none`,
             }}
@@ -105,7 +103,7 @@ const Bio = () => {
             <span className={`hidden`}>Linked In</span>
           </a>
           {` `}
-          <a 
+          <a
             style={{
               backgroundImage: `none`,
             }}
@@ -117,7 +115,7 @@ const Bio = () => {
             <span className={`hidden`}>Email</span>
           </a>
           {` `}
-          <a 
+          <a
             style={{
               backgroundImage: `none`,
             }}

@@ -70,8 +70,9 @@ class Layout extends React.Component {
             fontSize: `16px`,
             fontFamily: `Josefin Sans`,
             fontWeight: 600,
-          }}>
-            © {new Date().getFullYear()}
+          }}
+        >
+          © {new Date().getFullYear()}
         </footer>
       </div>
     )

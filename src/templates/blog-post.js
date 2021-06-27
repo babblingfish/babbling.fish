@@ -26,7 +26,7 @@ class BlogPostTemplate extends React.Component {
               style={{
                 marginTop: rhythm(1 / 2),
                 marginBottom: rhythm(1 / 4),
-                fontSize: '50px',
+                fontSize: "50px",
               }}
             >
               {post.frontmatter.title}
@@ -52,11 +52,11 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <footer 
+          <footer
             style={{
               marginTop: rhythm(1.5),
               marginBottom: rhythm(1),
-              }}
+            }}
           >
             <Bio />
           </footer>

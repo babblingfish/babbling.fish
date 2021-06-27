@@ -41,16 +41,18 @@ class BlogIndex extends React.Component {
                 <small
                   style={{
                     fontFamily: `Lora`,
-                    fontStyle: 'italic',
+                    fontStyle: "italic",
                   }}
-                >{node.frontmatter.date}</small>
+                >
+                  {node.frontmatter.date}
+                </small>
                 {` `}
                 <Category category={node.frontmatter.category} />
               </header>
               <section>
                 <p
                   style={{
-                    fontFamily: 'Josefin Sans',
+                    fontFamily: "Josefin Sans",
                     fontWeight: 600,
                   }}
                   dangerouslySetInnerHTML={{

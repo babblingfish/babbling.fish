@@ -1,4 +1,4 @@
-import '../fonts/fonts.css'
+import "../fonts/fonts.css"
 
 import Typography from "typography"
 import gray from "gray-percentage"
@@ -28,8 +28,7 @@ const theme = {
       a: {
         color: "inherit",
         textDecoration: "none",
-        textShadow:
-          `.03em 0 ${backgroundColor},-.03em 0 ${backgroundColor},0 .03em ${backgroundColor},0 -.03em ${backgroundColor},.06em 0 ${backgroundColor},-.06em 0 ${backgroundColor},.09em 0 ${backgroundColor},-.09em 0 ${backgroundColor},.12em 0 ${backgroundColor},-.12em 0 ${backgroundColor},.15em 0 ${backgroundColor},-.15em 0 ${backgroundColor}`, // eslint-disable-line
+        textShadow: `.03em 0 ${backgroundColor},-.03em 0 ${backgroundColor},0 .03em ${backgroundColor},0 -.03em ${backgroundColor},.06em 0 ${backgroundColor},-.06em 0 ${backgroundColor},.09em 0 ${backgroundColor},-.09em 0 ${backgroundColor},.12em 0 ${backgroundColor},-.12em 0 ${backgroundColor},.15em 0 ${backgroundColor},-.15em 0 ${backgroundColor}`, // eslint-disable-line
         backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2.5px, rgba(0, 0, 0, 0) 2px)`, // eslint-disable-line
       },
       "h2 a:hover": {
@@ -44,7 +43,7 @@ const theme = {
       },
       "h1,h2,h3,h4,h5,h6": {
         marginTop: rhythm(1.5),
-        marginBottom: rhythm(.5),
+        marginBottom: rhythm(0.5),
       },
       "h3,h4,h5,h6": {
         fontFamily: `Josefin Sans`,
@@ -53,14 +52,14 @@ const theme = {
       "::selection": {
         color: "white",
         textShadow: "none",
-        background: `${linkColor}`, 
+        background: `${linkColor}`,
       },
       "::-moz-selection": {
         color: "white",
         textShadow: "none",
-        background: `${linkColor}`, 
+        background: `${linkColor}`,
       },
-      "small": {
+      small: {
         color: gray(30),
         fontWeight: 300,
         fontSize: "18px",
@@ -71,7 +70,7 @@ const theme = {
         marginLeft: "20px",
         marginBottom: 0,
       },
-      "code": {
+      code: {
         fontFamily: "Source Code Pro",
         fontWeight: 400,
       },
@@ -93,8 +92,8 @@ const theme = {
         borderLeft: `${rhythm(3 / 16)} solid ${linkColor}`,
         fontFamily: "Montserrat",
         color: gray(30),
-        paddingTop: rhythm(5 / 16), 
-        paddingBottom: rhythm(5 / 16), 
+        paddingTop: rhythm(5 / 16),
+        paddingBottom: rhythm(5 / 16),
         paddingLeft: rhythm(10 / 16),
         marginLeft: 0,
         marginRight: 0,
@@ -126,7 +125,6 @@ const theme = {
     }
   },
 }
-
 
 const typography = new Typography(theme)
 

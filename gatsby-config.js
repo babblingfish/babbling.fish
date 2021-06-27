@@ -48,18 +48,14 @@ module.exports = {
             resolve: "gatsby-remark-external-links",
             options: {
               target: "_blank",
-              rel: "nofollow noopener noreferrer"
-            }
+              rel: "nofollow noopener noreferrer",
+            },
           },
           `gatsby-remark-smartypants`,
           {
             resolve: `gatsby-remark-vscode`,
             options: {
-              defaultTheme: 'Dark+ (default dark)',
-              extensions: [{
-                identifier: '2gua.rainbow-brackets',
-                version: '0.0.6'
-              }],
+              defaultTheme: "Dark+ (default dark)",
             },
           },
         ],
@@ -82,9 +78,10 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-mailchimp',
+      resolve: "gatsby-plugin-mailchimp",
       options: {
-          endpoint: 'https://fish.us19.list-manage.com/subscribe/post?u=500fdd2fd194d5d134a52df4f&amp;id=80f458b9df', 
+        endpoint:
+          "https://fish.us19.list-manage.com/subscribe/post?u=500fdd2fd194d5d134a52df4f&amp;id=80f458b9df",
       },
     },
     `gatsby-plugin-react-helmet`,

@@ -6,7 +6,7 @@ category: "Reference"
 image: ./run-length-encoding.png
 ---
 
-Vertica is a distributed database used for data warehousing and analytics. In order to properly design tables and queries it’s important to understand the key features. This is by no means comprehensive, I’d recommend checking out the official Vertica documentation for a more technical viewpoint.  The goal is to provide an intuitive understanding of first principles to allow a programmer familiar with SQL to get cracking.
+Vertica is a distributed database used for data warehousing and analytics. In order to properly design tables and queries it’s important to understand the key features. This is by no means comprehensive, I’d recommend checking out the official Vertica documentation for a more technical viewpoint. The goal is to provide an intuitive understanding of first principles to allow a programmer familiar with SQL to get cracking.
 
 ## Vertical Storage
 
@@ -28,7 +28,7 @@ Every table has a super projection containing all the columns of a logical table
 
 Segmentation is where the data is stored. For large tables, the goal is to evenly distribute the data across the cluster for parallel query execution to avoid shuffling. This is done by using a hash key on a unique identifier like a user_id, a hash key can contain multiple columns. If records need to be shuffled between nodes for a join you will see `GLOBAL RESEGMENT GROUPS` in the query plan. This is a hint that segmentation is a possible way to improve performance.
 
-For small dimension tables you want it to be replicated across all nodes. To do this you mark the table as `UNSEGMENTED ALL NODES` this will create a copy of the table in each node in the cluster. This will allow the each node to load the table into memory for quick hash joins. 
+For small dimension tables you want it to be replicated across all nodes. To do this you mark the table as `UNSEGMENTED ALL NODES` this will create a copy of the table in each node in the cluster. This will allow the each node to load the table into memory for quick hash joins.
 
 ```sql
 -- fact table of transactions
@@ -52,14 +52,14 @@ CREATE TABLE products (
    product_description VARCHAR(1000) NOT NULL
 ) ORDER BY product_type, product_id  -- highlight-line
   UNSEGMENTED ALL NODES              -- highlight-line
-; 
+;
 ```
 
 ## Sorting and Cardinality
 
 The sort order determines how the data is stored on disk. This is the primary way query performance is optimized. The order by clause determines the sort order. The goal is to use columns that get used in join, where, and group by clauses. Using a sort column in a join allows a merge join, a special optimized type of join that works by using two pointers on two sorted lists. When used correctly with segmentation a merge join allows records to be quickly joined on a node without any shuffling.
 
-One of the ways this works is by Run Length Encoding on low cardinality columns. Run Length Encoding (RLE) works by sorting the data then taking the counts of each value. Rather than storing each individual value it sorts the values then stores the counts for each unique value.  When you include a column with RLE in the where clause Vertica will do a predicate push down and only access the values you want excluding the rest. This is similar to how an index works in typical databases. When used in a where clause it allows the query optimizer to scan only a fraction of the rows, making the query more selective and much faster.
+One of the ways this works is by Run Length Encoding on low cardinality columns. Run Length Encoding (RLE) works by sorting the data then taking the counts of each value. Rather than storing each individual value it sorts the values then stores the counts for each unique value. When you include a column with RLE in the where clause Vertica will do a predicate push down and only access the values you want excluding the rest. This is similar to how an index works in typical databases. When used in a where clause it allows the query optimizer to scan only a fraction of the rows, making the query more selective and much faster.
 
 ![Run Length Encoding](./run-length-encoding.png)
 

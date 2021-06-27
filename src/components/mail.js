@@ -10,7 +10,7 @@ export default class Mail extends React.Component {
     success: false,
   }
 
-  _handleChange = e => {
+  _handleChange = (e) => {
     console.log({
       [`${e.target.name}`]: e.target.value,
     })
@@ -19,7 +19,7 @@ export default class Mail extends React.Component {
     })
   }
 
-  _handleSubmit = async e => {
+  _handleSubmit = async (e) => {
     e.preventDefault()
     const { result, msg } = await addToMailchimp(this.state.email)
 
@@ -27,7 +27,9 @@ export default class Mail extends React.Component {
       throw Error(msg)
     } else {
       this.setState({ success: true })
-      setTimeout(() => { this.handleClick() }, 2500)  // close after delay
+      setTimeout(() => {
+        this.handleClick()
+      }, 2500) // close after delay
     }
     this.setState({ result: result })
   }
