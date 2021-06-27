@@ -2,7 +2,7 @@
 title: Vertica Survival Guide
 date: "2019-12-26T22:12:03.284Z"
 description: "A guide to using Vertica for data warehousing and ETL, for people who already know SQL."
-category: "Databases"
+category: "Reference"
 image: ./run-length-encoding.png
 ---
 
