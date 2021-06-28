@@ -7,7 +7,7 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { config } from "@fortawesome/fontawesome-svg-core"
@@ -21,25 +21,22 @@ import { rhythm } from "../utils/typography"
 config.autoAddCss = false
 
 const Bio = () => {
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-        childImageSharp {
-          fixed(width: 75, height: 75) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      site {
-        siteMetadata {
-          author
-          social {
-            github
-          }
-        }
+  const data = useStaticQuery(graphql`query BioQuery {
+  avatar: file(absolutePath: {regex: "/profile-pic.jpg/"}) {
+    childImageSharp {
+      gatsbyImageData(width: 75, height: 75, layout: FIXED)
+    }
+  }
+  site {
+    siteMetadata {
+      author
+      social {
+        github
       }
     }
-  `)
+  }
+}
+`)
 
   const { author } = data.site.siteMetadata
   return (
@@ -48,20 +45,18 @@ const Bio = () => {
         display: `flex`,
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
+      <GatsbyImage
+        image={data.avatar.childImageSharp.gatsbyImageData}
         alt={author}
         style={{
           marginRight: rhythm(1 / 2),
           marginTop: rhythm(1 / 5),
           marginBottom: 0,
-          minWidth: 75,
           borderRadius: `100%`,
         }}
         imgStyle={{
           borderRadius: `50%`,
-        }}
-      />
+        }} />
       <div
         style={{
           display: `flex`,
@@ -130,7 +125,7 @@ const Bio = () => {
         <Mail />
       </div>
     </div>
-  )
+  );
 }
 
 export default Bio
