@@ -99,7 +99,7 @@ figcaption {
 }
 
 .vscode-highlight {
-  --vscode-highlight-line-highlighted-background-color: hsla(0, 0%, 100%, 0.15);
-  --vscode-highlight-line-highlighted-border-color: #d3bb45; /* default: transparent */
-  --vscode-highlight-line-highlighted-border-width: 5px; /* default: 2px */
+  --grvsc-line-highlighted-background-color: hsla(0, 0%, 100%, 0.15);
+  --grvsc-line-highlighted-border-color: #d3bb45; /* default: transparent */
+  --grvsc-line-highlighted-border-width: 5px; /* default: 2px */
 }
