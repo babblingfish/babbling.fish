@@ -98,7 +98,7 @@ figcaption {
   line-height: 1.35rem;
 }
 
-.vscode-highlight {
+:root {
   --grvsc-line-highlighted-background-color: hsla(0, 0%, 100%, 0.15);
   --grvsc-line-highlighted-border-color: #d3bb45; /* default: transparent */
   --grvsc-line-highlighted-border-width: 5px; /* default: 2px */
