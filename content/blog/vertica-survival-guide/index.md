@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Vertica
 date: "2021-07-05T16:20:00.00Z"
-description: "A guide to using Vertica for data warehousing for people who already know SQL."
+description: "How to use Vertica for data warehousing for people who already know SQL. An introduction to the fundamental concepts of a columnar database."
 category: "How-to"
 ---
 
