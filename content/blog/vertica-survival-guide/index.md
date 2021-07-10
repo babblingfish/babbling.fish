@@ -61,10 +61,6 @@ CREATE TABLE products (
 ;
 ```
 
-When two tables share the same segmentation key it allows for a `PIPED MERGE`. Wheny you see this in the query plan you know that the joins are being performed on each node without shuffling. If you see `GLOBAL RESEGMENT GROUPS` on a slow query, then consider refactoring your segmentation to avoid shuffling. 
-
-[#TODO: need to fact checkt his]
-
 ## Sorting and Cardinality
 
 The sort order determines how the data is stored on disk. This is the primary way query performance is optimized. The order by clause determines the sort order. The goal is to use columns that get used in join, where, and group by clauses. 
@@ -83,6 +79,7 @@ When a column with RLE is used in a group by clause, assuming there aren’t too
 
 A heuristic used for designing sort order is to use columns in ascending cardinliaty. It is a similar priniciple to a [Huffman Encoding](Link needed) where data is stored in a hierachical data structure optimized for fast access. 
 
+When a table is grouped by the columns it is sorted by that allows a  `GROUPBY PIPELINED`. This allows Vertica to process one group at a time so it typically uses less memery and is faster than `GROUPBY HASH`.
 
 ## Conclusion
 
