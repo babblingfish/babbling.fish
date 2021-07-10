@@ -11,7 +11,7 @@ const theme = {
   baseLineHeight: 1.575,
   scaleRatio: 2.2,
   headerFontFamily: ["Abril Fatface", "serif"],
-  bodyFontFamily: ["Lora", "Roboto", "sans-serif"],
+  bodyFontFamily: ["Lora", "Roboto", "Galatia SIL", "serif"],
   headerColor: "hsla(0,0%,0%,0.82)",
   bodyColor: "hsla(0,0%,0%,91)",
   headerWeight: 400,

@@ -9,6 +9,16 @@
        url('./files/abril-fatface-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* galatia-sil-regular - Ancient Greek */
+@font-face {
+  font-family: 'Galatia SIL';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('./files/GalSILR.woff') format('woff'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
 /* josefin-sans-600 - latin */
 @font-face {
   font-family: 'Josefin Sans';
