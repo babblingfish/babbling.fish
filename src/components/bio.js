@@ -7,7 +7,7 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image"
 
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { config } from "@fortawesome/fontawesome-svg-core"
@@ -22,11 +22,6 @@ config.autoAddCss = false
 
 const Bio = () => {
   const data = useStaticQuery(graphql`query BioQuery {
-  avatar: file(absolutePath: {regex: "/profile-pic.jpg/"}) {
-    childImageSharp {
-      gatsbyImageData(width: 75, height: 75, layout: FIXED)
-    }
-  }
   site {
     siteMetadata {
       author
@@ -45,18 +40,22 @@ const Bio = () => {
         display: `flex`,
       }}
     >
-      <GatsbyImage
-        image={data.avatar.childImageSharp.gatsbyImageData}
+      <StaticImage
+        src="../images/profile-pic.jpg"
         alt={author}
+        placeholder="blurred"
+        layout="fixed"
+        width={85}
+        height={85}
         style={{
           marginRight: rhythm(1 / 2),
           marginTop: rhythm(1 / 5),
           marginBottom: 0,
-          borderRadius: `100%`,
         }}
         imgStyle={{
           borderRadius: `50%`,
-        }} />
+        }}
+      />
       <div
         style={{
           display: `flex`,
