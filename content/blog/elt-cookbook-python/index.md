@@ -1,7 +1,7 @@
 ---
 title: "Python for Distributed Systems"
 description: "Common design patterns used by data engineers to write python scripts that can be horizontally scaled on a stateless task runner."
-date: "2021-09-47T16:20:00.00Z"
+date: "2021-09-04T16:20:00.00Z"
 category: "Reference"
 ---
 
