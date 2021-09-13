@@ -90,7 +90,7 @@ I will be using the python library `BeautifulSoup4`to parse the HTML because thi
 
 ```python
 from bs4 import BeautifulSoup
-soup = BeautifulSoup(response.text)
+soup = BeautifulSoup(response.text, features="lxml")
 ```
 Please note that this parsing code will become broken when they rename their CSS classes. If you are finding that the examples are not working, then try fixing them to work with how the website is structured and named today. 
 
@@ -120,14 +120,14 @@ We will be combining the job description (jd) with information we found on this 
 posting = {"job_title": job_title, "summary": summary, "company": company, "location": location}
 jd_page = listing.get("href")
 if jd_page is not None:
-    yield response.follow(jd_page, callback=self.parse_jd, cb_kwargs=posting))
+    yield response.follow(jd_page, callback=self.parse_jd, cb_kwargs=posting)
 ```
 
 Now all that’s left to do is parse the job description and then yield the item for collection. Luckily for us the job description has a unique id. This is the easiest way to select a specific element. We want to save the URL for the job description, because if we end up applying we’ll need the link to find the apply button. 
 
 ``` python
-def parse_jd(self, **posting):
-    soup = BeautifulSoup(request.text)
+def parse_jd(self, response, **posting):
+    soup = BeautifulSoup(response.text, features="lxml")
     jd = soup.find("div", {"id": "jobDescriptionText"}).get_text()
     url = response.url
     posting.update({"job_description": jd, "url": url}) 
@@ -171,3 +171,5 @@ Jupyter notebooks facilitate this type of development by utilizing cells and iPy
 The next step would be to aggregate and normalize the data, analyze it, then create some sort of user interface for accessing it. For example you could have a website that displays all the scraped websites sorted and filtered on custom criteria. You could use keyword detection to prioritize the listings that offer the opportunities you are most interested in.
 
 Using scrapy to write a spider will get you past the first step, parsing data from a web page and saving it. This is the first component in any data pipeline that relies on data from web crawling. Once you have captured the data you can then start extracting value from it for whatever application you wish.
+
+You can download a python file with [all the code](./indeed.py) from this tutorial.
