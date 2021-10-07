@@ -27,14 +27,12 @@ def download_image(s3, s3_obj, article_dict):
                     Key=s3_obj["Key"],
                     Fileobj=image_file
                 )
-            print("Download complete.")
         else:
-            print(f"Skipping {s3_obj['Key']} file already exists")
+            print(f"Skipping {s3_obj['Key']}. File already exists")
 
 def main():
     root_dir = Path(__file__).resolve().parent
     article_dict = get_article_dict(root_dir)
-
 
     aws_ses = Session(
         aws_access_key_id=os.environ["BF_AWS_ACCESS_KEY_ID"],

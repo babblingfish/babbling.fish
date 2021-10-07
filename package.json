@@ -53,9 +53,9 @@
     "url": "git+https://github.com/mbass171/babbling.fish.git"
   },
   "scripts": {
-    "prebuild": "python3 -m pip install -r requirements.txt && python3 get_photos.py",
+    "prebuild": "python3 get_photos.py",
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
-    "predevelop": "python3 -m pip install -r requirements.txt && python3 get_photos.py",
+    "predevelop": "python3 get_photos.py",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
