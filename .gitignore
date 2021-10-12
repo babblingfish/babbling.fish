@@ -67,3 +67,10 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# env vars
+.env*
+
+# photos in blog dir
+
+content/blog/**/*.jpg
