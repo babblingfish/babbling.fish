@@ -103,7 +103,7 @@ const Bio = () => {
             }}
             target={`_blank`}
             rel={`noopener noreferrer`}
-            href={`mattbass@babbling.fish`}
+            href={`mailto:mattbass@babbling.fish`}
           >
             <FontAwesomeIcon icon={faEnvelope} />
             <span className={`hidden`}>Email</span>
