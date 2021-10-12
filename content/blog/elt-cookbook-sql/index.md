@@ -5,7 +5,7 @@ date: "2021-09-30T16:20:00.00Z"
 category: "Reference"
 ---
 
-Writing SQL for the purpose of data aggregation and reporting requires a separate mindset then writing SQL for the backend of a web application. For a web application we typically are updating a specific user's records. In data warehousing application we need to think of ways to efficiently backfill our data and run our SQL quickly at scale. 
+Writing SQL for the purpose of data aggregation and reporting requires a separate mindset than writing SQL for the backend of a web application. For a web application we typically are updating a specific user's records. In data warehousing application we need to think of ways to efficiently backfill our data and run our SQL quickly at scale. 
 
 A backfill is when we want to populate data in a table for the past X days. To do so our SQL has to be repeatable and horizontally scaleable. We need to populate data for multiple days at a time in a way that does not leak data or result in duplication. Below are a few tips to achieve this goal.
 
