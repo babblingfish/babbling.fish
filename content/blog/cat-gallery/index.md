@@ -1,7 +1,7 @@
 ---
 title: "Add Images to Gatsby Blog"
 description: "How to use S3 as a headless CMS to add photos to a Gatsby Blog that uses Markdown and gatsby-image."
-date: "2021-10-15T16:20:00.00Z"
+date: "2021-10-12T16:20:00.00Z"
 category: "Tutorial"
 ---
 
