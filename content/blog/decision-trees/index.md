@@ -1,6 +1,6 @@
 ---
 title: "What is a Decision Tree?"
-description: "A high level explanation of the decision tree data structure and how it used in data science."
+description: "A high level explanation of the decision tree data structure and how it is used in data science."
 date: "2021-11-17T16:20:00.00Z"
 category: "How-to"
 ---
