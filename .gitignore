@@ -72,5 +72,7 @@ yarn-error.log
 .env*
 
 # photos in blog dir
-
 content/blog/**/*.jpg
+
+# ghost writer backup
+content/blog/**/*.backup
