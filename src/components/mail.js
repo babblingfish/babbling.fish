@@ -64,7 +64,10 @@ export default class Mail extends React.Component {
               </button>
             </div>
           </form>
-          <div className={`${this.state.success ? "" : "hidden"}`} style={{ fontFamily: `Josefin Sans` }}>
+          <div
+            className={`${this.state.success ? "" : "hidden"}`}
+            style={{ fontFamily: `Josefin Sans` }}
+          >
             Thank you for subscribing!
           </div>
         </div>
