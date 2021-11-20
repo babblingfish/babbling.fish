@@ -21,17 +21,18 @@ import { rhythm } from "../utils/typography"
 config.autoAddCss = false
 
 const Bio = () => {
-  const data = useStaticQuery(graphql`query BioQuery {
-  site {
-    siteMetadata {
-      author
-      social {
-        github
+  const data = useStaticQuery(graphql`
+    query BioQuery {
+      site {
+        siteMetadata {
+          author
+          social {
+            github
+          }
+        }
       }
     }
-  }
-}
-`)
+  `)
 
   const { author } = data.site.siteMetadata
   return (
@@ -124,7 +125,7 @@ const Bio = () => {
         <Mail />
       </div>
     </div>
-  );
+  )
 }
 
 export default Bio
