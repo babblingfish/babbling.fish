@@ -78,6 +78,14 @@ textarea:focus, input:focus{
   color: #2084ba;
 }
 
+.reading-progress-bar {
+  position: sticky;
+  height: 5px;
+  top: 0;
+  background-color: #2084ba;
+  z-index: 1;
+}
+
 footer {
   font-family: "Josefin Sans Bold";
 }
