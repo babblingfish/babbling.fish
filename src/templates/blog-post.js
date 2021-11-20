@@ -24,7 +24,7 @@ class BlogPostTemplate extends React.Component {
             title={post.frontmatter.title}
             description={post.frontmatter.description || post.excerpt}
           />
-          <article>
+          <article ref={target}>
             <header>
               <h1
                 style={{
@@ -50,7 +50,7 @@ class BlogPostTemplate extends React.Component {
                 <Category category={post.frontmatter.category} />
               </small>
             </header>
-            <section dangerouslySetInnerHTML={{ __html: post.html }} ref={target} />
+            <section dangerouslySetInnerHTML={{ __html: post.html }} />
             <hr
               style={{
                 marginBottom: rhythm(1),
