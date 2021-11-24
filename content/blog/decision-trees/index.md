@@ -5,7 +5,7 @@ date: "2021-11-17T16:20:00.00Z"
 category: "How-to"
 ---
 
-![](./tree.jpg)
+![Henry Cowell Redwoods State Park, Santa Cruz CA](./tree.jpg)
 
 Decisions trees are a simple, yet surprisingly powerful data structure used in several machine learning models. They are used in ensemble models like XGBoost and Random Forest. An ensemble model is when the output is averaged across several different methods to obtain a better result. These are often powerful models that are versatile and easy to use.
 
