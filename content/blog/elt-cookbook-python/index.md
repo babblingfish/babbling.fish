@@ -128,7 +128,7 @@ def min_max_scale(s: list):
     for i in range(len(s)):
 -        s[i] = (s[i] - min_val) / (max_val - min_val)
 +        new_series = (s[i] - min_val) / (max_val - min_val)
-    return s
+    return new_series
 ```
 
 Also, any resources used to complete the action need to be safely closed. One additional note is to avoid modifying global state variables. If a function references a global variable it should be in a read-only context.
