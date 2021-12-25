@@ -1,13 +1,19 @@
 import React from "react"
+import {
+  mint,
+  orange,
+  indigo,
+  gold,
+} from '@radix-ui/colors';
+
 
 export default class Category extends React.Component {
   getColor = (category) => {
     const colorMap = {
-      Tutorial: "#ff00ad",
-      "How-to": "#B30000",
-      Reference: "#49a57a",
-      Explanation: "#603267",
-      "Personal Essay": "#7a49a5",
+      Tutorial: mint.mint11,
+      "How-to": orange.orange11,
+      Reference: indigo.indigo11,
+      Explanation: gold.gold11,
     }
 
     if (category in colorMap) {

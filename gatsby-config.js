@@ -123,7 +123,7 @@ module.exports = {
         short_name: `Babbling Fish`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#28a5e9`,
+        theme_color: `rgb(240, 79, 136)`,
         display: `minimal-ui`,
         icon: `content/assets/fish-icon.svg`,
       },

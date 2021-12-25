@@ -5,6 +5,12 @@ import gray from "gray-percentage"
 import { MOBILE_MEDIA_QUERY } from "typography-breakpoint-constants"
 import verticalRhythm from "compass-vertical-rhythm"
 
+import {
+  crimson,
+  mauve,
+  tomato,
+} from '@radix-ui/colors';
+
 const theme = {
   title: "Beach House",
   baseFontSize: "20px",
@@ -12,14 +18,14 @@ const theme = {
   scaleRatio: 2.2,
   headerFontFamily: ["Abril Fatface", "serif"],
   bodyFontFamily: ["Lora", "Roboto", "Galatia SIL", "serif"],
-  headerColor: "hsla(0,0%,0%,0.82)",
-  bodyColor: "hsla(0,0%,0%,91)",
+  headerColor: mauve.mauve12,
+  bodyColor: mauve.mauve12,
   headerWeight: 400,
   bodyWeight: 400,
   boldWeight: 500,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
-    const linkColor = "#28a5e9"
-    const backgroundColor = "#FDF6F2"
+    const linkColor = crimson.crimson10
+    const backgroundColor = tomato.tomato1
     const vr = verticalRhythm({
       baseFontSize: "16px",
       baseLineHeight: "1.55",
@@ -30,9 +36,6 @@ const theme = {
         textDecoration: "none",
         textShadow: `.03em 0 ${backgroundColor},-.03em 0 ${backgroundColor},0 .03em ${backgroundColor},0 -.03em ${backgroundColor},.06em 0 ${backgroundColor},-.06em 0 ${backgroundColor},.09em 0 ${backgroundColor},-.09em 0 ${backgroundColor},.12em 0 ${backgroundColor},-.12em 0 ${backgroundColor},.15em 0 ${backgroundColor},-.15em 0 ${backgroundColor}`, // eslint-disable-line
         backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2.5px, rgba(0, 0, 0, 0) 2px)`, // eslint-disable-line
-      },
-      "h2 a:hover": {
-        color: "hsla(0,0%,0%,0.72)",
       },
       "p a": {
         backgroundPosition: "0 1.2em",
