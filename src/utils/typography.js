@@ -15,7 +15,7 @@ const theme = {
   title: "Beach House",
   baseFontSize: "20px",
   baseLineHeight: 1.575,
-  scaleRatio: 2.2,
+  scaleRatio: 2.1,
   headerFontFamily: ["Abril Fatface", "serif"],
   bodyFontFamily: ["Lora", "Roboto", "Galatia SIL", "serif"],
   headerColor: mauve.mauve12,
@@ -28,7 +28,7 @@ const theme = {
     const backgroundColor = tomato.tomato1
     const vr = verticalRhythm({
       baseFontSize: "16px",
-      baseLineHeight: "1.55",
+      baseLineHeight: "1.575",
     })
     return {
       a: {
@@ -91,10 +91,10 @@ const theme = {
       },
       // Blockquote styles.
       blockquote: {
-        ...scale(1 / 5),
+        ...scale(1 / 6),
+        lineHeight: "35px",
         borderLeft: `${rhythm(3 / 16)} solid ${linkColor}`,
         fontFamily: "Montserrat",
-        color: gray(30),
         paddingTop: rhythm(5 / 16),
         paddingBottom: rhythm(5 / 16),
         paddingLeft: rhythm(10 / 16),

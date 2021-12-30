@@ -38,11 +38,10 @@ class BlogPostTemplate extends React.Component {
               <small
                 style={{
                   ...scale(-1 / 5),
-                  fontWeight: 300,
+                  fontWeight: 600,
                   display: `block`,
                   marginBottom: rhythm(1 / 2),
-                  fontFamily: `Lora`,
-                  fontStyle: `italic`,
+                  fontFamily: `Josefin Sans`,
                 }}
               >
                 By {author} · {post.frontmatter.date}
