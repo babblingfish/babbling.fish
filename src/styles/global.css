@@ -1,6 +1,7 @@
 @import "@radix-ui/colors/crimson.css";
-@import "@radix-ui/colors/tomato.css";
 @import "@radix-ui/colors/mauve.css";
+@import "@radix-ui/colors/tomato.css";
+@import  "@radix-ui/colors/violet.css";
 
 html {
   background-color: var(--tomato1);
@@ -47,7 +48,7 @@ hr::before {
   background-color: inherit;
   display: inline-block;
   height: 2rem;
-  border: 1px solid var(--crimson9);
+  border: 1px solid var(--violet9);
   border-radius: 0.25rem;
   border-right-width: 0;
   border-radius: 5px 0 0 5px;
@@ -69,8 +70,8 @@ textarea:focus, input:focus{
   margin-left: 0;
   padding: 0.25rem 0.5rem;
   height: 2rem;
-  background: var(--crimson10);
-  border: 1px solid var(--crimson10);
+  background: var(--violet9);
+  border: 1px solid var(--violet9);
   border-radius: 0 0.25rem 0.25rem 0;
   color: white;
   font-family: "Montserrat";
@@ -82,7 +83,7 @@ textarea:focus, input:focus{
 }
 
 .submit:hover {
-  background: var(--crimson9);
+  background: var(--violet11);
 }
 
 .author {
