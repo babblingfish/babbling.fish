@@ -6,6 +6,7 @@ import Category from "../components/category"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { rhythm } from "../utils/typography"
+import { mauve } from "@radix-ui/colors"
 
 class BlogIndex extends React.Component {
   render() {
@@ -40,8 +41,9 @@ class BlogIndex extends React.Component {
                 </h2>
                 <small
                   style={{
-                    fontFamily: `Lora`,
-                    fontStyle: "italic",
+                    color: mauve.mauve11,
+                    fontFamily: `Josefin Sans`,
+                    fontWeight: 600,
                   }}
                 >
                   {node.frontmatter.date}

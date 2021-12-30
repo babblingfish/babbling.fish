@@ -1,13 +1,19 @@
 import React from "react"
+import {
+  mint,
+  orange,
+  indigo,
+  tomato,
+} from '@radix-ui/colors';
+
 
 export default class Category extends React.Component {
   getColor = (category) => {
     const colorMap = {
-      Tutorial: "#ff00ad",
-      "How-to": "#B30000",
-      Reference: "#49a57a",
-      Explanation: "#603267",
-      "Personal Essay": "#7a49a5",
+      Tutorial: mint.mint11,
+      "How-to": orange.orange11,
+      Reference: indigo.indigo11,
+      Explanation: tomato.tomato11,
     }
 
     if (category in colorMap) {
@@ -27,12 +33,12 @@ export default class Category extends React.Component {
           color: color,
           borderRadius: "10px",
           padding: "2px 5px 2px 5px",
-          fontFamily: `Lora`,
-          fontStyle: "italic",
-          fontWeight: 600,
+          fontFamily: `Josefin Sans`,
+          fontSize: "15px",
+          fontWeight: 700,
         }}
       >
-        {category}
+        {category.toUpperCase()}
       </small>
     )
   }

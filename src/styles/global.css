@@ -1,11 +1,16 @@
+@import "@radix-ui/colors/crimson.css";
+@import "@radix-ui/colors/mauve.css";
+@import "@radix-ui/colors/tomato.css";
+@import  "@radix-ui/colors/violet.css";
+
 html {
-  background-color: #FDF6F2;
+  background-color: var(--tomato1);
   max-width: 100%;
   overflow-x: hidden;
 }
 
 img {
-  background: #FDF6F2;
+  background: var(--tomato1);
   box-shadow: none !important;
 }
 
@@ -14,8 +19,12 @@ hr {
   clear:both;
   display:block;
   width: 96%;                
-  background-color:#FDF6F2;
+  background-color:var(--tomato1);
   height: 1px;
+}
+
+a:hover {
+  color: var(--mauve11) !important;
 }
 
 hr::before {
@@ -39,7 +48,7 @@ hr::before {
   background-color: inherit;
   display: inline-block;
   height: 2rem;
-  border: 1px solid #28a5e9;
+  border: 1px solid var(--violet9);
   border-radius: 0.25rem;
   border-right-width: 0;
   border-radius: 5px 0 0 5px;
@@ -61,8 +70,8 @@ textarea:focus, input:focus{
   margin-left: 0;
   padding: 0.25rem 0.5rem;
   height: 2rem;
-  background: #2084ba;
-  border: 1px solid #2084ba;
+  background: var(--violet9);
+  border: 1px solid var(--violet9);
   border-radius: 0 0.25rem 0.25rem 0;
   color: white;
   font-family: "Montserrat";
@@ -73,16 +82,20 @@ textarea:focus, input:focus{
   cursor: pointer;
 }
 
+.submit:hover {
+  background: var(--violet11);
+}
+
 .author {
   font-weight: 700;
-  color: #2084ba;
+  color: var(--crimson11);
 }
 
 .reading-progress-bar {
   position: sticky;
   height: 5px;
   top: 0;
-  background-color: #2084ba;
+  background-color: var(--crimson10);
   z-index: 1;
 }
 
