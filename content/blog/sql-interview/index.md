@@ -158,7 +158,7 @@ WITH trips AS (
    FROM (
          SELECT driver_id,
                 ROW_NUMBER() OVER 
-                (PARTITION BY driver_id ORDER BY num_trips) as row_num
+                (PARTITION BY driver_id ORDER BY num_trips DESC) as row_num
            FROM trips ) T
   WHERE T.row_num = 5
 ```
