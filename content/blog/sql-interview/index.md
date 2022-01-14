@@ -142,7 +142,7 @@ WITH canceled AS (
 )
 ```
 
-## How to use Row Number to get the kth item
+## How to use Row Number to get the Kth Item
 
 Whenever you see them asking for the kth ordered item, you should instantly think of [ROW_NUMBER](https://www.postgresqltutorial.com/postgresql-row_number/). Similarly you may need to use [Rank](https://www.postgresqltutorial.com/postgresql-rank-function/), but this is less common because it is harder to use. With Rank you can end up having multiple rows with the same ranking and that makes the code more complex.
 
@@ -163,4 +163,4 @@ WITH trips AS (
   WHERE T.row_num = 5
 ```
 
-This query will only return the driver the fifth most trips.There are other analytical functions that are useful, so be sure to read up on some of the others. Some functions are easier to write questions for than others so keep that in mind when you decide how much effort to put into studying each.
+This query will only return the driver the fifth most trips. There are other analytical functions that are useful, so be sure to read up on some of the others. Some functions are easier to write questions for than others so keep that in mind when you decide how much effort to put into studying each.
