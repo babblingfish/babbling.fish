@@ -49,7 +49,7 @@ const theme = {
         marginBottom: rhythm(0.5),
       },
       "hr": {
-        marginBottom: rhythm(2),
+        marginTop: rhythm(1),
       },
       "p": {
         marginBottom: rhythm(4 / 5),
