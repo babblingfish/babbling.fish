@@ -16,21 +16,22 @@ img {
 
 hr {
   border: 0;
-  clear:both;
-  display:block;
-  width: 96%;                
-  background-color:var(--tomato1);
+  clear: both;
+  display: block;
+  width: 96%;    
+  background-color: var(--tomato1);
   height: 1px;
+}
+
+hr::before {
+  color: var(--mauve12);
+  content: '***';
+  display: block;
+  text-align: center;
 }
 
 a:hover {
   color: var(--mauve11) !important;
-}
-
-hr::before {
-  content: '***';
-  display: block;
-  text-align: center;
 }
 
 .hidden {

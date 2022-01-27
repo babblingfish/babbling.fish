@@ -13,7 +13,7 @@ import {
 
 const theme = {
   title: "Beach House",
-  baseFontSize: "20px",
+  baseFontSize: "19x",
   baseLineHeight: 1.575,
   scaleRatio: 2.1,
   headerFontFamily: ["Abril Fatface", "serif"],
@@ -47,6 +47,12 @@ const theme = {
       "h1,h2,h3,h4,h5,h6": {
         marginTop: rhythm(1.5),
         marginBottom: rhythm(0.5),
+      },
+      "hr": {
+        marginBottom: rhythm(2),
+      },
+      "p": {
+        marginBottom: rhythm(4 / 5),
       },
       "h3,h4,h5,h6": {
         fontFamily: `Josefin Sans`,
