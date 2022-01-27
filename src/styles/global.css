@@ -15,19 +15,9 @@ img {
 }
 
 hr {
-  border: 0;
-  clear: both;
-  display: block;
-  width: 96%;    
-  background-color: var(--tomato1);
-  height: 1px;
-}
-
-hr::before {
-  color: var(--mauve12);
-  content: '***';
-  display: block;
-  text-align: center;
+	background: url(aquarium.svg) no-repeat top center;
+	height: 32px;
+	border: none !important;
 }
 
 a:hover {
