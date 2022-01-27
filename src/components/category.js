@@ -4,6 +4,7 @@ import {
   orange,
   indigo,
   tomato,
+  crimson,
 } from '@radix-ui/colors';
 
 
@@ -14,6 +15,7 @@ export default class Category extends React.Component {
       "How-to": orange.orange11,
       Reference: indigo.indigo11,
       Explanation: tomato.tomato11,
+      "Personal History": crimson.crimson11,
     }
 
     if (category in colorMap) {
