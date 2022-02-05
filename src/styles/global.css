@@ -32,7 +32,7 @@ a:hover {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
-  max-width: 350px;
+  max-width: 290px;
 }
 
 .email {
