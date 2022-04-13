@@ -65,6 +65,7 @@ const Bio = () => {
         <p
           style={{
             fontFamily: `Josefin Sans`,
+            marginTop: rhythm(1 / 4),
             marginBottom: rhythm(1 / 5),
             maxWidth: `600px`,
           }}
