@@ -42,7 +42,7 @@ const Bio = () => {
       }}
     >
       <StaticImage
-        src="../images/profile-pic.jpg"
+        src="../images/profile-pic.png"
         alt={author}
         placeholder="blurred"
         layout="fixed"
