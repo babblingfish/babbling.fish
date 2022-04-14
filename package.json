@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Matthew Bass",
   "bugs": {
-    "url": "https://github.com/mbass171/babbling.fish/issues"
+    "url": "https://github.com/babblingfish/babbling.fish/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
@@ -51,7 +51,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mbass171/babbling.fish.git"
+    "url": "git+https://github.com/babblingfish/babbling.fish.git"
   },
   "scripts": {
     "prebuild": "python3 get_photos.py",

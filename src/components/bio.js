@@ -80,7 +80,7 @@ const Bio = () => {
             }}
             target={`_blank`}
             rel={`noopener noreferrer`}
-            href={`https://github.com/mbass171/babbling.fish`}
+            href={`https://github.com/babblingfish/babbling.fish`}
           >
             <FontAwesomeIcon icon={faGithub} />
             <span className={`hidden`}>Github</span>
