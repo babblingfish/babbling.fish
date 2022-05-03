@@ -5,7 +5,7 @@ module.exports = {
     description: `A personal blog exploring topics in data.`,
     siteUrl: `http://babbling.fish/`,
     social: {
-      github: `mbass171`,
+      github: `babblingfish`,
     },
   },
   plugins: [

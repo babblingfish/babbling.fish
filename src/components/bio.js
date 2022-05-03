@@ -42,7 +42,7 @@ const Bio = () => {
       }}
     >
       <StaticImage
-        src="../images/profile-pic.jpg"
+        src="../images/profile-pic.png"
         alt={author}
         placeholder="blurred"
         layout="fixed"
@@ -50,7 +50,6 @@ const Bio = () => {
         height={85}
         style={{
           marginRight: rhythm(1 / 2),
-          marginTop: rhythm(1 / 5),
           marginBottom: 0,
         }}
         imgStyle={{
@@ -66,6 +65,7 @@ const Bio = () => {
         <p
           style={{
             fontFamily: `Josefin Sans`,
+            marginTop: rhythm(1 / 4),
             marginBottom: rhythm(1 / 5),
             maxWidth: `600px`,
           }}
@@ -80,7 +80,7 @@ const Bio = () => {
             }}
             target={`_blank`}
             rel={`noopener noreferrer`}
-            href={`https://github.com/mbass171/babbling.fish`}
+            href={`https://github.com/babblingfish/babbling.fish`}
           >
             <FontAwesomeIcon icon={faGithub} />
             <span className={`hidden`}>Github</span>

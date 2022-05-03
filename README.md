@@ -14,7 +14,7 @@ My personal blog about topics in Data Engineering. The source code for this webs
 ## Installation
 
 ```shell
-git clone git@github.com:mbass171/babbling.fish.git
+git clone git@github.com:babblingfish/babbling.fish.git
 cd babbling.fish
 npm install
 # or yarn install

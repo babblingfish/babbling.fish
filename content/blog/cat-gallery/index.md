@@ -33,7 +33,7 @@ The solution I came up with was to store the images in S3 and download them to t
 
 ## Implementation
 
-I decided to write [a script in python](https://github.com/mbass171/babbling.fish/blob/master/get_photos.py) to pull images into the repo during build time. I choose python because it is installed by default in Ubuntu 20.04, the docker image I am using to build this website. The script is simple and pulls down images and puts them into a directory that matches their key prefix in S3.
+I decided to write [a script in python](https://github.com/babblingfish/babbling.fish/blob/master/get_photos.py) to pull images into the repo during build time. I choose python because it is installed by default in Ubuntu 20.04, the docker image I am using to build this website. The script is simple and pulls down images and puts them into a directory that matches their key prefix in S3.
 
 In `package.json` you can create "pre" scripts. For example, if you create a script named `prebuild` it will automatically get executed before the `build` script. I placed the script here so it would run before the build.
 
