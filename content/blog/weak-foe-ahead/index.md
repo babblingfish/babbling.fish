@@ -5,7 +5,7 @@ category: "Explanation"
 date: "2022-05-04T16:20:00.00Z"
 ---
 
-![Let us learn together. Art by 澈 (Che)](turtle-pope.png)
+![Let us learn together. Art by 澈 (Che)](./turtle-pope.png)
 
 *Spoiler Warning: The following article contains spoilers about enemies, items, bosses, and areas for Elden Ring by FromSoftware.* 
 
@@ -16,8 +16,8 @@ One way to measure the current popularity of a game is the concurrent player cou
 
 Not only does this show Elden Ring has a remarkably high retention rate, it also means it was spreading through word-of-mouth. As of writing, 30.5% of players have beat Horah Loux (penultimate final boss) on Steam. Having 30% of players complete a 90+ hour game that sold millions of copies has to be some kind of world record.
 
-![Chart of Elden Ring concurrent player count for the last three months](steam_charts_er.png)
-![Chart of Halo Infinite (low retention game) concurrent player count for comparison.](steam_charts_hi.png)
+![Chart of Elden Ring concurrent player count for the last three months](./steam_charts_er.png)
+![Chart of Halo Infinite (low retention game) concurrent player count for comparison.](./steam_charts_hi.png)
 
 
 What I want to talk about is my favorite new feature in the game, the mimic tear. The mimic tear is a spirit summons that creates a copy of your character with all the same equipment. 
@@ -44,4 +44,4 @@ At times the game can be scary. Especially dark areas filled with enemies hiding
 
 In the Mogwyn palace, the interior is pitch black and enemies come out of pools of blood on the ground to ambush you. I felt safe with my mimic, they could lock on to enemies before I even saw them. When two enemies spawned, I would take one and they would take the other. Playing with the mimic is like playing with an older sibling (I have two older brothers) as a kid. You have someone with seemingly magic powers to protect you. Now you never have to play alone. 
 
-![Rest here weary traveler](rest-here-weary-traveler.jpg)
+![Rest here weary traveler](./rest-here-weary-traveler.jpg)
