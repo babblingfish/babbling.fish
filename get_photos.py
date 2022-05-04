@@ -48,8 +48,8 @@ def main():
 
         if (
             not s3_obj["Key"].endswith(".jpg")
-            or s3_obj["Key"].endswith(".png")
-            or s3_obj["Key"].endswith(".gif")
+            or not s3_obj["Key"].endswith(".png")
+            or not s3_obj["Key"].endswith(".gif")
         ):
             continue
 
