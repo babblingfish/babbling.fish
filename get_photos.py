@@ -45,14 +45,6 @@ def main():
     s3_objs = s3.list_objects_v2(Bucket=os.environ["S3_BUCKET_NAME"])
 
     for s3_obj in s3_objs["Contents"]:
-
-        if (
-            not s3_obj["Key"].endswith(".jpg")
-            and not s3_obj["Key"].endswith(".png")
-            and not s3_obj["Key"].endswith(".gif")
-        ):
-            continue
-
         download_image(s3, s3_obj, article_dict)
 
 
