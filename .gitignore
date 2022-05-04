@@ -78,3 +78,6 @@ content/blog/**/*.gif
 
 # ghost writer backup
 content/blog/**/*.backup
+
+# vscode
+.vscode
