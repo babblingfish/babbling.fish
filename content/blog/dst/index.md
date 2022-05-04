@@ -1,7 +1,7 @@
 ---
 title: "Daylight Savings Time"
 description: "How daylight savings time has been ruining my life and will ruin yours one day."
-category: "Explanation"
+category: "How-to"
 date: "2022-03-27T16:20:00.00Z"
 ---
 
