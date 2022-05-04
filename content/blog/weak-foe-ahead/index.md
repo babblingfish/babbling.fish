@@ -2,7 +2,7 @@
 title: "Weak Foe Ahead"
 description: "My favorite feature in Elden Ring by FromSoftware is a certain spirit summons. Elden Ring Spoiler Warning!"
 category: "Explanation"
-date: "2022-05-047T16:20:00.00Z"
+date: "2022-05-04T16:20:00.00Z"
 ---
 
 ![Let us learn together. Art by 澈 (Che)](turtle-pope.png)
