@@ -74,6 +74,10 @@ yarn-error.log
 # photos in blog dir
 content/blog/**/*.jpg
 content/blog/**/*.png
+content/blog/**/*.gif
 
 # ghost writer backup
 content/blog/**/*.backup
+
+# vscode
+.vscode
