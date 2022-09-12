@@ -9,16 +9,12 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import "@fortawesome/fontawesome-svg-core/styles.css"
-import { config } from "@fortawesome/fontawesome-svg-core"
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope, faRss } from "@fortawesome/fontawesome-free-solid"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
+import { Github } from "../logos/github"
+import { LinkedIn } from "../logos/linkedIn"
+import { Envelope } from "../logos/envelope"
+import { Feed } from "../logos/feed"
 import Mail from "./mail"
 import { rhythm } from "../utils/typography"
-
-config.autoAddCss = false
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -82,7 +78,7 @@ const Bio = () => {
             rel={`noopener noreferrer`}
             href={`https://github.com/babblingfish/babbling.fish`}
           >
-            <FontAwesomeIcon icon={faGithub} />
+            <Github/>
             <span className={`hidden`}>Github</span>
           </a>
           {` `}
@@ -94,7 +90,7 @@ const Bio = () => {
             rel={`noopener noreferrer`}
             href={`https://linkedin.com/in/babbling-fish`}
           >
-            <FontAwesomeIcon icon={faLinkedinIn} />
+            <LinkedIn/>
             <span className={`hidden`}>Linked In</span>
           </a>
           {` `}
@@ -106,7 +102,7 @@ const Bio = () => {
             rel={`noopener noreferrer`}
             href={`mailto:mattbass@babbling.fish`}
           >
-            <FontAwesomeIcon icon={faEnvelope} />
+            <Envelope/>
             <span className={`hidden`}>Email</span>
           </a>
           {` `}
@@ -118,7 +114,7 @@ const Bio = () => {
             rel={`noopener noreferrer`}
             href={`/rss.xml`}
           >
-            <FontAwesomeIcon icon={faRss} />
+            <Feed/>
             <span className={`hidden`}>RSS</span>
           </a>
         </p>
