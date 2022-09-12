@@ -112,6 +112,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
+            title: "Babbling Fish: A personal blog"
           },
         ],
       },
