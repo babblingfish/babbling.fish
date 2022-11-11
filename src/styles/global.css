@@ -77,6 +77,10 @@ textarea:focus, input:focus{
   background: var(--violet11);
 }
 
+svg {
+  fill: var(--mauve12) !important;
+}
+
 .author {
   font-weight: 700;
   color: var(--crimson11);
