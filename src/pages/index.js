@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
-import Category from "../components/category"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -25,7 +24,7 @@ class BlogIndex extends React.Component {
               <header>
                 <h2
                   style={{
-                    marginBottom: rhythm(1 / 4),
+                    marginBottom: rhythm(3 / 5),
                     textShadow: `none`,
                   }}
                 >
@@ -39,17 +38,6 @@ class BlogIndex extends React.Component {
                     {title}
                   </Link>
                 </h2>
-                <small
-                  style={{
-                    color: mauve.mauve11,
-                    fontFamily: `Josefin Sans`,
-                    fontWeight: 600,
-                  }}
-                >
-                  {node.frontmatter.date}
-                </small>
-                {` `}
-                <Category category={node.frontmatter.category} />
               </header>
               <section>
                 <p
