@@ -5,7 +5,6 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { rhythm } from "../utils/typography"
-import { mauve } from "@radix-ui/colors"
 
 class BlogIndex extends React.Component {
   render() {
