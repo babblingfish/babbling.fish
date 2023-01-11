@@ -25,7 +25,7 @@
     "gatsby-remark-smartypants": "^5.22.0",
     "gatsby-remark-vscode": "^3.2.1",
     "gatsby-source-filesystem": "^4.22.0",
-    "gatsby-transformer-remark": "^5.22.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^4.22.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
