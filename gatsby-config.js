@@ -34,7 +34,7 @@ module.exports = {
               maxWidth: 740,
               linkImagesToOriginal: true,
               showCaptions: true,
-              quality: 100,
+              quality: 75,
             },
           },
           {
