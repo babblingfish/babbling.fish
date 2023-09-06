@@ -126,7 +126,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `rgb(240, 79, 136)`,
         display: `minimal-ui`,
-        icon: `content/assets/fish-icon.svg`,
+        icon: `static/favicon.ico`,
       },
     },
     `gatsby-plugin-offline`,

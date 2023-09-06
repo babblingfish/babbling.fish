@@ -38,7 +38,7 @@ const Bio = () => {
       }}
     >
       <StaticImage
-        src="../images/profile-pic.png"
+        src="../images/babblingfish-logo.png"
         alt={author}
         placeholder="blurred"
         layout="fixed"
