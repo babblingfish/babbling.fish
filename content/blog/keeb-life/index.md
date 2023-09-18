@@ -1,7 +1,7 @@
 ---
 title: The Keeb Life
 date: "2023-09-17T16:20:00.00Z"
-description: "My experience with purchasing the split ortholinear Moonlander keyboard form ZSA."
+description: "My experience with purchasing the Moonlander keyboard form ZSA."
 category: "Explanation"
 ---
 ![A view from the Sea-to-Sky Gondola, Squamish, BC](./sea-to-sky-gondola.jpg)
