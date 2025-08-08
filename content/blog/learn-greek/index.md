@@ -99,3 +99,4 @@ As you get better the number of resources that are accessible increases. Eventua
 
 There are no shortcuts so the best thing to do is love the process. Approach the language each day with a beginner's mind, and have fun with it! If you are like me, progress may be slow. As long as you are enjoying the process that will help sustain your practice. 
 
+Edit: Republished to my [new blog](https://mattbass0.substack.com/p/learn-with-modern-greek-texts).
